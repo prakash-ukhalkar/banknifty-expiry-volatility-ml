@@ -1,0 +1,50 @@
+{
+    "Diebold_Mariano_MSE": {
+        "DM_Stat": -0.40349434219614677,
+        "P_Value_Two_Sided": 0.6865845960864614,
+        "P_Value_One_Sided": 0.6567077019567693
+    },
+    "Diebold_Mariano_MAE": {
+        "DM_Stat": 0.22544877293416235,
+        "P_Value_Two_Sided": 0.8216301727759254,
+        "P_Value_One_Sided": 0.4108150863879627
+    },
+    "Trading_Backtest": {
+        "Baseline (Technical Only)": {
+            "Annualized_Return": 0.38163384599783035,
+            "Annualized_Vol": 0.19713294211844082,
+            "Sharpe_Ratio": 1.9359212209623404,
+            "Sortino_Ratio": 2.9448876884268484,
+            "Max_Drawdown": -0.07637367541336565,
+            "Total_Return": 0.24934541168486035,
+            "Buy_Hold_Return": -0.012261602970326302
+        },
+        "Baseline + Expiry": {
+            "Annualized_Return": 0.41312208181683446,
+            "Annualized_Vol": 0.1966299813649658,
+            "Sharpe_Ratio": 2.101012668307366,
+            "Sortino_Ratio": 3.081108294875495,
+            "Max_Drawdown": -0.066315507097588,
+            "Total_Return": 0.2725056137953712,
+            "Buy_Hold_Return": -0.012261602970326302
+        },
+        "Baseline + Regime": {
+            "Annualized_Return": 0.28292442527936906,
+            "Annualized_Vol": 0.19780331927575104,
+            "Sharpe_Ratio": 1.4303320405101674,
+            "Sortino_Ratio": 2.1248877762217044,
+            "Max_Drawdown": -0.10496944069158133,
+            "Total_Return": 0.17943940853481855,
+            "Buy_Hold_Return": -0.012261602970326302
+        },
+        "Proposed (Combined)": {
+            "Annualized_Return": 0.4085329064090292,
+            "Annualized_Vol": 0.1967242287023881,
+            "Sharpe_Ratio": 2.0766781453598853,
+            "Sortino_Ratio": 3.0688942386834652,
+            "Max_Drawdown": -0.06631550709687789,
+            "Total_Return": 0.2691036477006272,
+            "Buy_Hold_Return": -0.012261602970326302
+        }
+    }
+}
