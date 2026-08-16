@@ -1,0 +1,83 @@
+{
+  "table": [
+    {
+      "Model_Type": "OLS",
+      "Condition": "Baseline (Technical Only)",
+      "RMSE": 0.012251243465763728,
+      "MAE": 0.008790161149106936,
+      "Directional_Accuracy": 0.5374149659863946
+    },
+    {
+      "Model_Type": "XGBoost",
+      "Condition": "Baseline (Technical Only)",
+      "RMSE": 0.012518224520400821,
+      "MAE": 0.008626826781861842,
+      "Directional_Accuracy": 0.5170068027210885
+    },
+    {
+      "Model_Type": "OLS",
+      "Condition": "Baseline + Expiry",
+      "RMSE": 0.012330952295146058,
+      "MAE": 0.0088427239558795,
+      "Directional_Accuracy": 0.54421768707483
+    },
+    {
+      "Model_Type": "XGBoost",
+      "Condition": "Baseline + Expiry",
+      "RMSE": 0.012518224520400821,
+      "MAE": 0.008626826781861842,
+      "Directional_Accuracy": 0.5170068027210885
+    },
+    {
+      "Model_Type": "OLS",
+      "Condition": "Baseline + Regime",
+      "RMSE": 0.012230630833724165,
+      "MAE": 0.008664920765475157,
+      "Directional_Accuracy": 0.5238095238095238
+    },
+    {
+      "Model_Type": "XGBoost",
+      "Condition": "Baseline + Regime",
+      "RMSE": 0.012518224520400821,
+      "MAE": 0.008626826781861842,
+      "Directional_Accuracy": 0.5170068027210885
+    },
+    {
+      "Model_Type": "OLS",
+      "Condition": "Proposed (Combined)",
+      "RMSE": 0.012310273811484794,
+      "MAE": 0.008766360757224242,
+      "Directional_Accuracy": 0.5306122448979592
+    },
+    {
+      "Model_Type": "XGBoost",
+      "Condition": "Proposed (Combined)",
+      "RMSE": 0.012518224520400821,
+      "MAE": 0.008626826781861842,
+      "Directional_Accuracy": 0.5170068027210885
+    }
+  ],
+  "dm_ols_vs_xgb": {
+    "Baseline (Technical Only)": {
+      "DM_Stat": -0.8761125270131428,
+      "P_Value_Two_Sided": 0.38096886330076285,
+      "P_Value_One_Sided": 0.8095155683496186
+    },
+    "Baseline + Expiry": {
+      "DM_Stat": -0.5206895034459542,
+      "P_Value_Two_Sided": 0.6025830876976879,
+      "P_Value_One_Sided": 0.6987084561511561
+    },
+    "Baseline + Regime": {
+      "DM_Stat": -0.8208044602659151,
+      "P_Value_Two_Sided": 0.41175765759804683,
+      "P_Value_One_Sided": 0.7941211712009766
+    },
+    "Proposed (Combined)": {
+      "DM_Stat": -0.532202961559551,
+      "P_Value_Two_Sided": 0.5945854320169404,
+      "P_Value_One_Sided": 0.7027072839915298
+    }
+  },
+  "naive_rmse": 0.01250846836114054
+}
