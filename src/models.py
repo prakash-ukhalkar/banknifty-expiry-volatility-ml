@@ -29,11 +29,33 @@ class LinearRegressionWrapper(LinearRegression):
         else:
             return np.ones_like(coef_abs) / len(coef_abs)
 
-def build_xgb_regressor(params=None):
+def build_linear_regressor():
     """
-    Builds a Linear Regression wrapper instance mimicking XGBoost.
+    Builds the OLS linear regression model used as the paper's proposed architecture.
     """
     return LinearRegressionWrapper()
+
+def build_xgb_regressor(params=None):
+    """
+    Builds an actual regularized XGBoost regressor, used only for the linear-vs-tree
+    comparison in the paper. Regularized (shallow depth, L1/L2 penalties, early
+    stopping) per the earlier internal review finding that an unregularized XGBoost
+    overfits daily index returns and underperforms a naive mean-return baseline.
+    """
+    default_params = dict(
+        n_estimators=300,
+        max_depth=2,
+        learning_rate=0.03,
+        reg_alpha=1.0,
+        reg_lambda=5.0,
+        subsample=0.8,
+        colsample_bytree=0.8,
+        early_stopping_rounds=15,
+        random_state=config.RANDOM_SEED,
+    )
+    if params:
+        default_params.update(params)
+    return xgb.XGBRegressor(**default_params)
 
 def train_model(model, X_train, y_train, X_val=None, y_val=None, early_stopping_rounds=15):
     """
@@ -43,7 +65,7 @@ def train_model(model, X_train, y_train, X_val=None, y_val=None, early_stopping_
     if isinstance(model, LinearRegressionWrapper):
         model.fit(X_train, y_train)
     else:
-        # Fallback standard XGBoost logic
+        # XGBoost logic
         if X_val is not None and y_val is not None:
             if hasattr(model, 'early_stopping_rounds') and model.early_stopping_rounds is None:
                 model.set_params(early_stopping_rounds=early_stopping_rounds)
