@@ -1,0 +1,54 @@
+{
+  "pooled_regression_log_Total_Volume": {
+    "params": {
+      "const": 15.45616855436286,
+      "IsExpiry": 0.12088817558920031,
+      "IsMonthlyOnly": -1.1072045830127673,
+      "Expiry_x_MonthlyOnly": 0.5976210111764371,
+      "Trend": 0.0025467822444610773,
+      "WD_Monday": 0.182270939084722,
+      "WD_Thursday": 1.0321382590986898,
+      "WD_Tuesday": 0.3889919237091656,
+      "WD_Wednesday": 0.3842519273171833
+    },
+    "p_values": {
+      "const": 0.0,
+      "IsExpiry": 0.05352399580575314,
+      "IsMonthlyOnly": 8.104193582055021e-51,
+      "Expiry_x_MonthlyOnly": 2.857012143509735e-07,
+      "Trend": 0.0,
+      "WD_Monday": 1.5958079813081272e-20,
+      "WD_Thursday": 7.041341060355481e-64,
+      "WD_Tuesday": 1.8479792817592363e-37,
+      "WD_Wednesday": 1.5919562322230554e-25
+    },
+    "n_obs": 1679,
+    "r_squared": 0.7581999687838841
+  },
+  "pooled_regression_log_Total_OpenInterest": {
+    "params": {
+      "const": 18.497846984348758,
+      "IsExpiry": 0.036066655074258144,
+      "IsMonthlyOnly": -0.10203851255493454,
+      "Expiry_x_MonthlyOnly": 0.05159256436411676,
+      "Trend": 0.0010735434368251773,
+      "WD_Monday": 0.11008340715336098,
+      "WD_Thursday": 0.2919411018873048,
+      "WD_Tuesday": 0.17707082477781483,
+      "WD_Wednesday": 0.17078189024777363
+    },
+    "p_values": {
+      "const": 0.0,
+      "IsExpiry": 0.015840639865231772,
+      "IsMonthlyOnly": 2.1319959964323263e-05,
+      "Expiry_x_MonthlyOnly": 0.03014034729222621,
+      "Trend": 0.0,
+      "WD_Monday": 3.668097361548451e-96,
+      "WD_Thursday": 5.674991220463548e-74,
+      "WD_Tuesday": 1.5294589227387054e-153,
+      "WD_Wednesday": 1.225526784595485e-32
+    },
+    "n_obs": 1679,
+    "r_squared": 0.91257837559614
+  }
+}

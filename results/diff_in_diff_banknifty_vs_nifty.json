@@ -1,0 +1,185 @@
+{
+  "Total_Value": {
+    "params": {
+      "const": 29.210639443469407,
+      "IsExpiry": 0.21820593694195883,
+      "IsMonthlyOnly": -0.43952774272055334,
+      "IsBankNifty": 0.2531222944002359,
+      "Expiry_x_Monthly": 0.41143075566475285,
+      "Expiry_x_BankNifty": 0.43397965563121926,
+      "Monthly_x_BankNifty": -3.2219848889066856,
+      "Expiry_x_Monthly_x_BankNifty": 1.3417605173905642,
+      "Trend": 0.0016713994563400778,
+      "Trend_x_BankNifty": -4.2773630932806616e-05,
+      "WD_Monday": 0.17055337738708692,
+      "WD_Thursday": 0.8613389084844766,
+      "WD_Tuesday": 0.3309439200508525,
+      "WD_Wednesday": 0.5019586213127045
+    },
+    "p_values": {
+      "const": 0.0,
+      "IsExpiry": 0.0005660618770614565,
+      "IsMonthlyOnly": 4.26566503607706e-10,
+      "IsBankNifty": 0.0053786561919023776,
+      "Expiry_x_Monthly": 0.002404520942483476,
+      "Expiry_x_BankNifty": 2.7495258396399652e-08,
+      "Monthly_x_BankNifty": 1.817483193634098e-92,
+      "Expiry_x_Monthly_x_BankNifty": 3.173394997433497e-07,
+      "Trend": 4.539323934568985e-283,
+      "Trend_x_BankNifty": 0.6287479199214019,
+      "WD_Monday": 1.857680241417987e-23,
+      "WD_Thursday": 4.962383392600675e-81,
+      "WD_Tuesday": 3.880549967358729e-44,
+      "WD_Wednesday": 7.340174278187237e-52
+    },
+    "n_obs": 3358,
+    "r_squared": 0.7438839942560466
+  },
+  "Total_OpenInterest_Notional": {
+    "params": {
+      "const": 22.848035079516777,
+      "IsExpiry": 0.07513726691747591,
+      "IsMonthlyOnly": 0.7290749059420305,
+      "IsBankNifty": -2.8782410703337304,
+      "Expiry_x_Monthly": -0.03955478880039791,
+      "Expiry_x_BankNifty": 0.13860057383347021,
+      "Monthly_x_BankNifty": -1.7737614215209851,
+      "Expiry_x_Monthly_x_BankNifty": 0.24972164148631198,
+      "Trend": 0.0002505590937012332,
+      "Trend_x_BankNifty": 0.0006342249812067048,
+      "WD_Monday": 0.13380260242104453,
+      "WD_Thursday": 0.27078944721054177,
+      "WD_Tuesday": 0.2051298442914661,
+      "WD_Wednesday": 0.24452377017732166
+    },
+    "p_values": {
+      "const": 0.0,
+      "IsExpiry": 0.013549742058212043,
+      "IsMonthlyOnly": 7.805288276524917e-25,
+      "IsBankNifty": 0.0,
+      "Expiry_x_Monthly": 0.5768773731120264,
+      "Expiry_x_BankNifty": 0.004027754857783558,
+      "Monthly_x_BankNifty": 1.3560329081072727e-53,
+      "Expiry_x_Monthly_x_BankNifty": 0.012906396627521358,
+      "Trend": 9.758394820307886e-11,
+      "Trend_x_BankNifty": 2.162287105837202e-18,
+      "WD_Monday": 1.1359682259147293e-45,
+      "WD_Thursday": 5.178035414996397e-58,
+      "WD_Tuesday": 1.2054445045081029e-79,
+      "WD_Wednesday": 1.0911141025373502e-62
+    },
+    "n_obs": 3358,
+    "r_squared": 0.9353742457486718
+  },
+  "Total_Volume": {
+    "params": {
+      "const": 15.479285613190553,
+      "IsExpiry": 0.2133637964188737,
+      "IsMonthlyOnly": -1.1049737172644996,
+      "IsBankNifty": 0.6052471156175597,
+      "Expiry_x_Monthly": 0.48258198425451965,
+      "Expiry_x_BankNifty": 0.4423202123287381,
+      "Monthly_x_BankNifty": -3.00965400282763,
+      "Expiry_x_Monthly_x_BankNifty": 1.2919122945057693,
+      "Trend": 0.0017224856329272873,
+      "Trend_x_BankNifty": -0.0003120582266731772,
+      "WD_Monday": 0.16993840887207837,
+      "WD_Thursday": 0.8681505024488569,
+      "WD_Tuesday": 0.3317140883669769,
+      "WD_Wednesday": 0.5006991297418769
+    },
+    "p_values": {
+      "const": 0.0,
+      "IsExpiry": 0.00018494469754448553,
+      "IsMonthlyOnly": 8.336157215860408e-49,
+      "IsBankNifty": 3.1511749009053817e-18,
+      "Expiry_x_Monthly": 9.026750335129152e-05,
+      "Expiry_x_BankNifty": 7.981163995009394e-10,
+      "Monthly_x_BankNifty": 1.7520323873755575e-66,
+      "Expiry_x_Monthly_x_BankNifty": 2.256877282842109e-06,
+      "Trend": 0.0,
+      "Trend_x_BankNifty": 1.5604377078094123e-05,
+      "WD_Monday": 1.5304770085859825e-23,
+      "WD_Thursday": 1.23796583226298e-82,
+      "WD_Tuesday": 6.782506833543955e-44,
+      "WD_Wednesday": 6.983220443779865e-51
+    },
+    "n_obs": 3358,
+    "r_squared": 0.7456576174409255
+  },
+  "Total_OpenInterest": {
+    "params": {
+      "const": 18.477803625181494,
+      "IsExpiry": 0.059267971423921754,
+      "IsMonthlyOnly": -0.1014277208964361,
+      "IsBankNifty": -1.7968906305736816,
+      "Expiry_x_Monthly": 0.007419779796436113,
+      "Expiry_x_BankNifty": 0.14645237367414787,
+      "Monthly_x_BankNifty": -1.6405954585347953,
+      "Expiry_x_Monthly_x_BankNifty": 0.23473400683208073,
+      "Trend": 0.0007261103764086111,
+      "Trend_x_BankNifty": 0.00043257469966442847,
+      "WD_Monday": 0.13314343677064824,
+      "WD_Thursday": 0.2744570509906927,
+      "WD_Tuesday": 0.20560705941979904,
+      "WD_Wednesday": 0.23933218923200028
+    },
+    "p_values": {
+      "const": 0.0,
+      "IsExpiry": 0.00010080150570631852,
+      "IsMonthlyOnly": 3.1838688925072916e-05,
+      "IsBankNifty": 1.8696575150837827e-246,
+      "Expiry_x_Monthly": 0.765427668709874,
+      "Expiry_x_BankNifty": 3.4318746484891273e-07,
+      "Monthly_x_BankNifty": 1.3183230225456703e-72,
+      "Expiry_x_Monthly_x_BankNifty": 0.012731174926374529,
+      "Trend": 0.0,
+      "Trend_x_BankNifty": 7.58593851384517e-18,
+      "WD_Monday": 5.125705191275393e-66,
+      "WD_Thursday": 7.972449941744252e-70,
+      "WD_Tuesday": 3.1747239390077294e-111,
+      "WD_Wednesday": 6.385360599380725e-70
+    },
+    "n_obs": 3358,
+    "r_squared": 0.9182020366358907
+  },
+  "placebo_date_test_Total_Value": {
+    "placebo cutover 2021-06-01 (deep in Weekly-Options era, no real break)": {
+      "coef": 0.6203471643847207,
+      "p_value": 0.009457218187070284,
+      "ci_lower": 0.15182069091238254,
+      "ci_upper": 1.088873637857059,
+      "n_obs": 3358
+    },
+    "placebo cutover 2022-06-01 (deep in Weekly-Options era, no real break)": {
+      "coef": 0.8338123245768831,
+      "p_value": 0.0011478392468687762,
+      "ci_lower": 0.3312058701849936,
+      "ci_upper": 1.3364187789687727,
+      "n_obs": 3358
+    },
+    "placebo cutover 2023-06-01 (deep in Weekly-Options era, no real break)": {
+      "coef": 1.0888121250703544,
+      "p_value": 1.6915473636763222e-05,
+      "ci_lower": 0.5927725981746915,
+      "ci_upper": 1.5848516519660172,
+      "n_obs": 3358
+    },
+    "TRUE cutover 2024-11-14": {
+      "coef": 1.3417605173905642,
+      "p_value": 3.173394997433497e-07,
+      "ci_lower": 0.8274086612301885,
+      "ci_upper": 1.85611237355094,
+      "n_obs": 3358
+    }
+  },
+  "leave_one_out_Total_Value": {
+    "full_sample_coef": 1.3417605173905642,
+    "loo_coef_min": 1.2170444457837992,
+    "loo_coef_max": 1.4785685321318534,
+    "loo_coef_mean": 1.3417597148706089,
+    "loo_coef_std": 0.04632602270900374,
+    "n_excluded_each": 1,
+    "n_loo_runs": 23
+  }
+}

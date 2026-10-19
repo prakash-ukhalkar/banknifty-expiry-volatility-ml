@@ -1,0 +1,256 @@
+{
+  "expiry_vs_nonexpiry_by_stratum_Total_Volume": [
+    {
+      "Stratum": "Thursday-era / Weekly-Options",
+      "Benchmark_Weekday": "Thursday",
+      "N_Expiry": 47,
+      "N_NonExpiry_SameWeekday": 163,
+      "Mean_Total_Volume_Expiry": 170897763.0425532,
+      "Mean_Total_Volume_NonExpiry_SameWeekday": 120934940.54601227,
+      "Pct_Increase": 41.313802504853015,
+      "Welch_t_stat": 1.9487910472026684,
+      "Welch_p_value": 0.05637297819986714
+    },
+    {
+      "Stratum": "Tuesday-era / Monthly-Only",
+      "Benchmark_Weekday": "Tuesday",
+      "N_Expiry": 12,
+      "N_NonExpiry_SameWeekday": 44,
+      "Mean_Total_Volume_Expiry": 75111464.75,
+      "Mean_Total_Volume_NonExpiry_SameWeekday": 2596916.6363636362,
+      "Pct_Increase": 2792.332533830417,
+      "Welch_t_stat": 31.981334946530197,
+      "Welch_p_value": 2.819607665694474e-12
+    },
+    {
+      "Stratum": "Wednesday-era / Monthly-Only",
+      "Benchmark_Weekday": "Wednesday",
+      "N_Expiry": 7,
+      "N_NonExpiry_SameWeekday": 30,
+      "Mean_Total_Volume_Expiry": 94332890.42857143,
+      "Mean_Total_Volume_NonExpiry_SameWeekday": 10134008.0,
+      "Pct_Increase": 830.8547065343882,
+      "Welch_t_stat": 1.2144143700170835,
+      "Welch_p_value": 0.2701485469877397
+    },
+    {
+      "Stratum": "Wednesday-era / Weekly-Options",
+      "Benchmark_Weekday": "Wednesday",
+      "N_Expiry": 8,
+      "N_NonExpiry_SameWeekday": 25,
+      "Mean_Total_Volume_Expiry": 580904092.25,
+      "Mean_Total_Volume_NonExpiry_SameWeekday": 659594001.52,
+      "Pct_Increase": -11.930052288023118,
+      "Welch_t_stat": -2.6213649634882943,
+      "Welch_p_value": 0.016140241187137985
+    }
+  ],
+  "event_window_Total_Volume": {
+    "-3": {
+      "mean": 37012124.32098766,
+      "n": 81
+    },
+    "-2": {
+      "mean": 43065108.666666664,
+      "n": 81
+    },
+    "-1": {
+      "mean": 68164037.50617284,
+      "n": 81
+    },
+    "0": {
+      "mean": 191642611.2962963,
+      "n": 81
+    },
+    "1": {
+      "mean": 37465775.04938272,
+      "n": 81
+    },
+    "2": {
+      "mean": 34723038.13580247,
+      "n": 81
+    },
+    "3": {
+      "mean": 59814572.641975306,
+      "n": 81
+    }
+  },
+  "expiry_vs_nonexpiry_by_stratum_Total_OpenInterest": [
+    {
+      "Stratum": "Thursday-era / Weekly-Options",
+      "Benchmark_Weekday": "Thursday",
+      "N_Expiry": 47,
+      "N_NonExpiry_SameWeekday": 163,
+      "Mean_Total_OpenInterest_Expiry": 81907767.55319148,
+      "Mean_Total_OpenInterest_NonExpiry_SameWeekday": 75740035.18404908,
+      "Pct_Increase": 8.143292189071127,
+      "Welch_t_stat": 0.772360315018027,
+      "Welch_p_value": 0.44268101843553265
+    },
+    {
+      "Stratum": "Tuesday-era / Monthly-Only",
+      "Benchmark_Weekday": "Tuesday",
+      "N_Expiry": 12,
+      "N_NonExpiry_SameWeekday": 44,
+      "Mean_Total_OpenInterest_Expiry": 62512396.25,
+      "Mean_Total_OpenInterest_NonExpiry_SameWeekday": 37103592.72727273,
+      "Pct_Increase": 68.48070942750167,
+      "Welch_t_stat": 10.851429672446532,
+      "Welch_p_value": 6.69641518235938e-09
+    },
+    {
+      "Stratum": "Wednesday-era / Monthly-Only",
+      "Benchmark_Weekday": "Wednesday",
+      "N_Expiry": 7,
+      "N_NonExpiry_SameWeekday": 30,
+      "Mean_Total_OpenInterest_Expiry": 83162547.14285715,
+      "Mean_Total_OpenInterest_NonExpiry_SameWeekday": 58079546.833333336,
+      "Pct_Increase": 43.18732097118918,
+      "Welch_t_stat": 1.7652217070298581,
+      "Welch_p_value": 0.12043106775569604
+    },
+    {
+      "Stratum": "Wednesday-era / Weekly-Options",
+      "Benchmark_Weekday": "Wednesday",
+      "N_Expiry": 8,
+      "N_NonExpiry_SameWeekday": 25,
+      "Mean_Total_OpenInterest_Expiry": 183592492.5,
+      "Mean_Total_OpenInterest_NonExpiry_SameWeekday": 182670208.8,
+      "Pct_Increase": 0.5048900453219263,
+      "Welch_t_stat": 0.19153783934222932,
+      "Welch_p_value": 0.8511868558550217
+    }
+  ],
+  "event_window_Total_OpenInterest": {
+    "-3": {
+      "mean": 62076041.666666664,
+      "n": 81
+    },
+    "-2": {
+      "mean": 69768951.54320988,
+      "n": 81
+    },
+    "-1": {
+      "mean": 78403376.91358025,
+      "n": 81
+    },
+    "0": {
+      "mean": 91848434.19753087,
+      "n": 81
+    },
+    "1": {
+      "mean": 48644798.45679013,
+      "n": 81
+    },
+    "2": {
+      "mean": 54292353.27160494,
+      "n": 81
+    },
+    "3": {
+      "mean": 64272015.30864198,
+      "n": 81
+    }
+  },
+  "weekly_options_discontinuation_within_wednesday_era": {
+    "Total_Volume": [
+      {
+        "LiquidityRegime": "Weekly-Options",
+        "Benchmark_Weekday": "Wednesday",
+        "N_Expiry": 8,
+        "N_NonExpiry_SameWeekday": 25,
+        "Mean_Total_Volume_Expiry": 580904092.25,
+        "Mean_Total_Volume_NonExpiry_SameWeekday": 659594001.52,
+        "Pct_Increase": -11.930052288023118,
+        "Welch_t_stat": -2.6213649634882943,
+        "Welch_p_value": 0.016140241187137985
+      },
+      {
+        "LiquidityRegime": "Monthly-Only",
+        "Benchmark_Weekday": "Wednesday",
+        "N_Expiry": 7,
+        "N_NonExpiry_SameWeekday": 30,
+        "Mean_Total_Volume_Expiry": 94332890.42857143,
+        "Mean_Total_Volume_NonExpiry_SameWeekday": 10134008.0,
+        "Pct_Increase": 830.8547065343882,
+        "Welch_t_stat": 1.2144143700170835,
+        "Welch_p_value": 0.2701485469877397
+      }
+    ],
+    "Total_OpenInterest": [
+      {
+        "LiquidityRegime": "Weekly-Options",
+        "Benchmark_Weekday": "Wednesday",
+        "N_Expiry": 8,
+        "N_NonExpiry_SameWeekday": 25,
+        "Mean_Total_OpenInterest_Expiry": 183592492.5,
+        "Mean_Total_OpenInterest_NonExpiry_SameWeekday": 182670208.8,
+        "Pct_Increase": 0.5048900453219263,
+        "Welch_t_stat": 0.19153783934222932,
+        "Welch_p_value": 0.8511868558550217
+      },
+      {
+        "LiquidityRegime": "Monthly-Only",
+        "Benchmark_Weekday": "Wednesday",
+        "N_Expiry": 7,
+        "N_NonExpiry_SameWeekday": 30,
+        "Mean_Total_OpenInterest_Expiry": 83162547.14285715,
+        "Mean_Total_OpenInterest_NonExpiry_SameWeekday": 58079546.833333336,
+        "Pct_Increase": 43.18732097118918,
+        "Welch_t_stat": 1.7652217070298581,
+        "Welch_p_value": 0.12043106775569604
+      }
+    ]
+  },
+  "pooled_regression_log_volume": {
+    "params": {
+      "const": 16.09698935993609,
+      "IsExpiry": 0.7478505628998867,
+      "IsMonthlyOnly": -4.106928308024175,
+      "Expiry_x_MonthlyOnly": 1.6592443310997569,
+      "Trend": 0.0020863803302966647,
+      "WD_Monday": 0.16278564325720776,
+      "WD_Thursday": 0.7055925736224193,
+      "WD_Tuesday": 0.27851121801379597,
+      "WD_Wednesday": 0.6197600270874538
+    },
+    "p_values": {
+      "const": 0.0,
+      "IsExpiry": 2.824823795839406e-29,
+      "IsMonthlyOnly": 2.5187501650430988e-149,
+      "Expiry_x_MonthlyOnly": 2.8725485559406042e-11,
+      "Trend": 1.882363972419768e-114,
+      "WD_Monday": 3.811335953616558e-09,
+      "WD_Thursday": 8.068975399594551e-29,
+      "WD_Tuesday": 2.7817328907745153e-14,
+      "WD_Wednesday": 4.071002400388817e-30
+    },
+    "n_obs": 1679,
+    "r_squared": 0.7267934646916651
+  },
+  "pooled_regression_log_oi": {
+    "params": {
+      "const": 16.6539367708665,
+      "IsExpiry": 0.22872991877708362,
+      "IsMonthlyOnly": -1.7388410878923544,
+      "Expiry_x_MonthlyOnly": 0.19786286613536297,
+      "Trend": 0.0017146744197095917,
+      "WD_Monday": 0.15932641647181026,
+      "WD_Thursday": 0.25783996631024286,
+      "WD_Tuesday": 0.23659876880951844,
+      "WD_Wednesday": 0.30946074959264686
+    },
+    "p_values": {
+      "const": 0.0,
+      "IsExpiry": 1.9592585039590268e-12,
+      "IsMonthlyOnly": 1.8508284580853758e-87,
+      "Expiry_x_MonthlyOnly": 0.03716871969912489,
+      "Trend": 1.6192739816482517e-131,
+      "WD_Monday": 1.4715860459210982e-28,
+      "WD_Thursday": 7.306997005438951e-23,
+      "WD_Tuesday": 5.776066072334996e-45,
+      "WD_Wednesday": 9.919637935609513e-45
+    },
+    "n_obs": 1679,
+    "r_squared": 0.665114278739624
+  }
+}

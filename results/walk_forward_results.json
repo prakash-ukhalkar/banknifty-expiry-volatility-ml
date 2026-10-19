@@ -4,316 +4,420 @@
       "Fold": 1,
       "Test_Start": "2024-10-31",
       "Test_End": "2025-02-25",
+      "Regimes": "Wednesday-era",
       "Condition": "Baseline (Technical Only)",
-      "RMSE": 0.009523705936016725,
-      "MAE": 0.007504532340309147,
-      "Directional_Accuracy": 0.5679012345679012,
-      "Sharpe_Ratio": -0.21683403680528857,
-      "Total_Return": -0.010257982589938486,
-      "Max_Drawdown": -0.07575740679302224
-    },
-    {
-      "Fold": 1,
-      "Test_Start": "2024-10-31",
-      "Test_End": "2025-02-25",
-      "Condition": "Baseline + Expiry",
-      "RMSE": 0.009574877333397465,
-      "MAE": 0.007617627693129083,
-      "Directional_Accuracy": 0.49382716049382713,
-      "Sharpe_Ratio": -1.0569753406401947,
-      "Total_Return": -0.04902636512760794,
-      "Max_Drawdown": -0.09827104983706705
-    },
-    {
-      "Fold": 1,
-      "Test_Start": "2024-10-31",
-      "Test_End": "2025-02-25",
-      "Condition": "Baseline + Regime",
-      "RMSE": 0.009727848812983242,
-      "MAE": 0.007651156804969183,
-      "Directional_Accuracy": 0.5432098765432098,
-      "Sharpe_Ratio": -0.42619133326188247,
-      "Total_Return": -0.02007606000354556,
-      "Max_Drawdown": -0.08162365466777816
-    },
-    {
-      "Fold": 1,
-      "Test_Start": "2024-10-31",
-      "Test_End": "2025-02-25",
-      "Condition": "Proposed (Combined)",
-      "RMSE": 0.009811572265833355,
-      "MAE": 0.007846945596407584,
-      "Directional_Accuracy": 0.49382716049382713,
-      "Sharpe_Ratio": -1.3829276980949006,
-      "Total_Return": -0.06353847650268307,
-      "Max_Drawdown": -0.07842649879079366
-    },
-    {
-      "Fold": 2,
-      "Test_Start": "2025-02-27",
-      "Test_End": "2025-06-27",
-      "Condition": "Baseline (Technical Only)",
-      "RMSE": 0.010340516419891407,
-      "MAE": 0.007529201091762375,
-      "Directional_Accuracy": 0.5308641975308642,
-      "Sharpe_Ratio": -1.2409956701908962,
-      "Total_Return": -0.06149634105749158,
-      "Max_Drawdown": -0.10403034021216044
-    },
-    {
-      "Fold": 2,
-      "Test_Start": "2025-02-27",
-      "Test_End": "2025-06-27",
-      "Condition": "Baseline + Expiry",
-      "RMSE": 0.010279168874196777,
-      "MAE": 0.007497957225729824,
+      "RMSE": 0.009513296860676135,
+      "MAE": 0.007398646022085256,
       "Directional_Accuracy": 0.5555555555555556,
-      "Sharpe_Ratio": 0.16379934206108332,
-      "Total_Return": 0.008430203342072895,
-      "Max_Drawdown": -0.08393451356782482
+      "Sharpe_Ratio": -0.19679881176839092,
+      "Total_Return": -0.009341765476714836,
+      "Max_Drawdown": -0.06549911800508541
+    },
+    {
+      "Fold": 1,
+      "Test_Start": "2024-10-31",
+      "Test_End": "2025-02-25",
+      "Regimes": "Wednesday-era",
+      "Condition": "Baseline + Expiry",
+      "RMSE": 0.009672695716324573,
+      "MAE": 0.007666202373887008,
+      "Directional_Accuracy": 0.4567901234567901,
+      "Sharpe_Ratio": -1.5342669670803604,
+      "Total_Return": -0.07022371556221019,
+      "Max_Drawdown": -0.10106372590185328
+    },
+    {
+      "Fold": 1,
+      "Test_Start": "2024-10-31",
+      "Test_End": "2025-02-25",
+      "Regimes": "Wednesday-era",
+      "Condition": "Baseline + Regime",
+      "RMSE": 0.009539137675338316,
+      "MAE": 0.00741449800303972,
+      "Directional_Accuracy": 0.5802469135802469,
+      "Sharpe_Ratio": 0.33452933745256364,
+      "Total_Return": 0.01607818653656401,
+      "Max_Drawdown": -0.06549911800508541
+    },
+    {
+      "Fold": 1,
+      "Test_Start": "2024-10-31",
+      "Test_End": "2025-02-25",
+      "Regimes": "Wednesday-era",
+      "Condition": "Proposed (Combined)",
+      "RMSE": 0.009655984597346373,
+      "MAE": 0.007584119972675433,
+      "Directional_Accuracy": 0.49382716049382713,
+      "Sharpe_Ratio": -0.7587682275602559,
+      "Total_Return": -0.03547968572159221,
+      "Max_Drawdown": -0.07801998873734903
     },
     {
       "Fold": 2,
       "Test_Start": "2025-02-27",
       "Test_End": "2025-06-27",
-      "Condition": "Baseline + Regime",
-      "RMSE": 0.010333414025865566,
-      "MAE": 0.0075458608121346344,
-      "Directional_Accuracy": 0.4691358024691358,
-      "Sharpe_Ratio": -1.6471240855627673,
-      "Total_Return": -0.08068914723009235,
-      "Max_Drawdown": -0.1179509053478389
+      "Regimes": "Wednesday-era",
+      "Condition": "Baseline (Technical Only)",
+      "RMSE": 0.010427165629528527,
+      "MAE": 0.007952856911522622,
+      "Directional_Accuracy": 0.5061728395061729,
+      "Sharpe_Ratio": 3.945900203612914,
+      "Total_Return": 0.21676133920858565,
+      "Max_Drawdown": -0.04467919035426879
     },
     {
       "Fold": 2,
       "Test_Start": "2025-02-27",
       "Test_End": "2025-06-27",
-      "Condition": "Proposed (Combined)",
-      "RMSE": 0.010288476896659546,
-      "MAE": 0.00752268220465849,
-      "Directional_Accuracy": 0.5555555555555556,
-      "Sharpe_Ratio": 0.5083943320934338,
-      "Total_Return": 0.02636147847396475,
-      "Max_Drawdown": -0.09042036304774369
-    },
-    {
-      "Fold": 3,
-      "Test_Start": "2025-06-30",
-      "Test_End": "2025-10-24",
-      "Condition": "Baseline (Technical Only)",
-      "RMSE": 0.00639423826307458,
-      "MAE": 0.005326263805893531,
-      "Directional_Accuracy": 0.43209876543209874,
-      "Sharpe_Ratio": -0.3194098574859024,
-      "Total_Return": -0.009331267539187671,
-      "Max_Drawdown": -0.07672131290251022
-    },
-    {
-      "Fold": 3,
-      "Test_Start": "2025-06-30",
-      "Test_End": "2025-10-24",
+      "Regimes": "Wednesday-era",
       "Condition": "Baseline + Expiry",
-      "RMSE": 0.006644349961589482,
-      "MAE": 0.005484461638208135,
-      "Directional_Accuracy": 0.3950617283950617,
-      "Sharpe_Ratio": -2.559652238921243,
-      "Total_Return": -0.07160501622402882,
-      "Max_Drawdown": -0.09456391768099982
-    },
-    {
-      "Fold": 3,
-      "Test_Start": "2025-06-30",
-      "Test_End": "2025-10-24",
-      "Condition": "Baseline + Regime",
-      "RMSE": 0.006188878554182404,
-      "MAE": 0.005125881054590112,
-      "Directional_Accuracy": 0.4444444444444444,
-      "Sharpe_Ratio": 0.11265664117984728,
-      "Total_Return": 0.0033160536537930607,
-      "Max_Drawdown": -0.05734340500393162
-    },
-    {
-      "Fold": 3,
-      "Test_Start": "2025-06-30",
-      "Test_End": "2025-10-24",
-      "Condition": "Proposed (Combined)",
-      "RMSE": 0.006489316846561039,
-      "MAE": 0.005327689946417887,
-      "Directional_Accuracy": 0.38271604938271603,
-      "Sharpe_Ratio": -2.8362642769324005,
-      "Total_Return": -0.07889052266928875,
-      "Max_Drawdown": -0.10166925594938543
-    },
-    {
-      "Fold": 4,
-      "Test_Start": "2025-10-27",
-      "Test_End": "2026-02-20",
-      "Condition": "Baseline (Technical Only)",
-      "RMSE": 0.006530655641429301,
-      "MAE": 0.005074067973833872,
-      "Directional_Accuracy": 0.43209876543209874,
-      "Sharpe_Ratio": -0.8282089061843609,
-      "Total_Return": -0.026487175068943825,
-      "Max_Drawdown": -0.0988368225152163
-    },
-    {
-      "Fold": 4,
-      "Test_Start": "2025-10-27",
-      "Test_End": "2026-02-20",
-      "Condition": "Baseline + Expiry",
-      "RMSE": 0.006584512667019299,
-      "MAE": 0.00512844554504893,
-      "Directional_Accuracy": 0.4074074074074074,
-      "Sharpe_Ratio": -2.645632346788696,
-      "Total_Return": -0.08193834880341311,
-      "Max_Drawdown": -0.10967777300513212
-    },
-    {
-      "Fold": 4,
-      "Test_Start": "2025-10-27",
-      "Test_End": "2026-02-20",
-      "Condition": "Baseline + Regime",
-      "RMSE": 0.0065688708097383815,
-      "MAE": 0.005079233693275646,
-      "Directional_Accuracy": 0.3950617283950617,
-      "Sharpe_Ratio": -3.713523381905118,
-      "Total_Return": -0.11146045787310743,
-      "Max_Drawdown": -0.13525382061342234
-    },
-    {
-      "Fold": 4,
-      "Test_Start": "2025-10-27",
-      "Test_End": "2026-02-20",
-      "Condition": "Proposed (Combined)",
-      "RMSE": 0.006617075283591225,
-      "MAE": 0.005124584439526993,
-      "Directional_Accuracy": 0.4074074074074074,
-      "Sharpe_Ratio": -2.1727771285154813,
-      "Total_Return": -0.06790677340406703,
-      "Max_Drawdown": -0.0960701645969338
-    },
-    {
-      "Fold": 5,
-      "Test_Start": "2026-02-23",
-      "Test_End": "2026-06-24",
-      "Condition": "Baseline (Technical Only)",
-      "RMSE": 0.015504018390246442,
-      "MAE": 0.011327988583685233,
-      "Directional_Accuracy": 0.5185185185185185,
-      "Sharpe_Ratio": 0.6548654876487084,
-      "Total_Return": 0.053790522606046,
-      "Max_Drawdown": -0.10535644926302822
-    },
-    {
-      "Fold": 5,
-      "Test_Start": "2026-02-23",
-      "Test_End": "2026-06-24",
-      "Condition": "Baseline + Expiry",
-      "RMSE": 0.015615643705067194,
-      "MAE": 0.011356511272021533,
-      "Directional_Accuracy": 0.4691358024691358,
-      "Sharpe_Ratio": 0.7597264240281826,
-      "Total_Return": 0.06267063684633989,
-      "Max_Drawdown": -0.13028004740656446
-    },
-    {
-      "Fold": 5,
-      "Test_Start": "2026-02-23",
-      "Test_End": "2026-06-24",
-      "Condition": "Baseline + Regime",
-      "RMSE": 0.015520909484738762,
-      "MAE": 0.011326971764598182,
+      "RMSE": 0.010421140012255149,
+      "MAE": 0.008060308547510666,
       "Directional_Accuracy": 0.5308641975308642,
-      "Sharpe_Ratio": 0.9250147818256936,
-      "Total_Return": 0.07678849755361128,
-      "Max_Drawdown": -0.09833014808997868
+      "Sharpe_Ratio": 2.4836532647077645,
+      "Total_Return": 0.13400202565398156,
+      "Max_Drawdown": -0.06699838518992068
     },
     {
-      "Fold": 5,
-      "Test_Start": "2026-02-23",
-      "Test_End": "2026-06-24",
-      "Condition": "Proposed (Combined)",
-      "RMSE": 0.015644477983523298,
-      "MAE": 0.011356310561998555,
+      "Fold": 2,
+      "Test_Start": "2025-02-27",
+      "Test_End": "2025-06-27",
+      "Regimes": "Wednesday-era",
+      "Condition": "Baseline + Regime",
+      "RMSE": 0.010341095615273606,
+      "MAE": 0.007862462353823194,
       "Directional_Accuracy": 0.48148148148148145,
-      "Sharpe_Ratio": 1.003563556080734,
-      "Total_Return": 0.08357382872626085,
-      "Max_Drawdown": -0.1302800474095355
+      "Sharpe_Ratio": 0.4550799474358922,
+      "Total_Return": 0.02363955036355736,
+      "Max_Drawdown": -0.07311539321577123
+    },
+    {
+      "Fold": 2,
+      "Test_Start": "2025-02-27",
+      "Test_End": "2025-06-27",
+      "Regimes": "Wednesday-era",
+      "Condition": "Proposed (Combined)",
+      "RMSE": 0.01038168693287711,
+      "MAE": 0.008062273904883304,
+      "Directional_Accuracy": 0.5185185185185185,
+      "Sharpe_Ratio": 1.3154732367424549,
+      "Total_Return": 0.06950522875143994,
+      "Max_Drawdown": -0.0669983851865886
+    },
+    {
+      "Fold": 3,
+      "Test_Start": "2025-06-30",
+      "Test_End": "2025-10-24",
+      "Regimes": "Tuesday-era,Wednesday-era",
+      "Condition": "Baseline (Technical Only)",
+      "RMSE": 0.006229613414652417,
+      "MAE": 0.004996461264439441,
+      "Directional_Accuracy": 0.4691358024691358,
+      "Sharpe_Ratio": -2.062427280325837,
+      "Total_Return": -0.05855191486985423,
+      "Max_Drawdown": -0.0669202533449354
+    },
+    {
+      "Fold": 3,
+      "Test_Start": "2025-06-30",
+      "Test_End": "2025-10-24",
+      "Regimes": "Tuesday-era,Wednesday-era",
+      "Condition": "Baseline + Expiry",
+      "RMSE": 0.0062860548868005515,
+      "MAE": 0.005099847294524654,
+      "Directional_Accuracy": 0.4444444444444444,
+      "Sharpe_Ratio": -2.2672436158739298,
+      "Total_Return": -0.06377064029774593,
+      "Max_Drawdown": -0.09547724144473667
+    },
+    {
+      "Fold": 3,
+      "Test_Start": "2025-06-30",
+      "Test_End": "2025-10-24",
+      "Regimes": "Tuesday-era,Wednesday-era",
+      "Condition": "Baseline + Regime",
+      "RMSE": 0.0061343816076344275,
+      "MAE": 0.0048831918638638575,
+      "Directional_Accuracy": 0.5185185185185185,
+      "Sharpe_Ratio": -1.6600053026492911,
+      "Total_Return": -0.04761826537110059,
+      "Max_Drawdown": -0.06310994200116192
+    },
+    {
+      "Fold": 3,
+      "Test_Start": "2025-06-30",
+      "Test_End": "2025-10-24",
+      "Regimes": "Tuesday-era,Wednesday-era",
+      "Condition": "Proposed (Combined)",
+      "RMSE": 0.00613832386151276,
+      "MAE": 0.005031520953576616,
+      "Directional_Accuracy": 0.4074074074074074,
+      "Sharpe_Ratio": -3.259015867571207,
+      "Total_Return": -0.08954749767744896,
+      "Max_Drawdown": -0.107010257870202
+    },
+    {
+      "Fold": 4,
+      "Test_Start": "2025-10-27",
+      "Test_End": "2026-02-20",
+      "Regimes": "Tuesday-era",
+      "Condition": "Baseline (Technical Only)",
+      "RMSE": 0.006550113166026868,
+      "MAE": 0.00490451960679682,
+      "Directional_Accuracy": 0.48148148148148145,
+      "Sharpe_Ratio": -1.3964419977538876,
+      "Total_Return": -0.04424612192736044,
+      "Max_Drawdown": -0.09064870756598213
+    },
+    {
+      "Fold": 4,
+      "Test_Start": "2025-10-27",
+      "Test_End": "2026-02-20",
+      "Regimes": "Tuesday-era",
+      "Condition": "Baseline + Expiry",
+      "RMSE": 0.006446876016247419,
+      "MAE": 0.0047562815627525575,
+      "Directional_Accuracy": 0.5555555555555556,
+      "Sharpe_Ratio": -0.3670069981564851,
+      "Total_Return": -0.011911746476768736,
+      "Max_Drawdown": -0.07185572596710695
+    },
+    {
+      "Fold": 4,
+      "Test_Start": "2025-10-27",
+      "Test_End": "2026-02-20",
+      "Regimes": "Tuesday-era",
+      "Condition": "Baseline + Regime",
+      "RMSE": 0.006527678048912843,
+      "MAE": 0.004852504778231862,
+      "Directional_Accuracy": 0.5555555555555556,
+      "Sharpe_Ratio": 0.07560802701549518,
+      "Total_Return": 0.0024562084163377573,
+      "Max_Drawdown": -0.05874077522607213
+    },
+    {
+      "Fold": 4,
+      "Test_Start": "2025-10-27",
+      "Test_End": "2026-02-20",
+      "Regimes": "Tuesday-era",
+      "Condition": "Proposed (Combined)",
+      "RMSE": 0.006482766711283011,
+      "MAE": 0.004818212478581778,
+      "Directional_Accuracy": 0.5432098765432098,
+      "Sharpe_Ratio": -0.6747020916327848,
+      "Total_Return": -0.021724650377942134,
+      "Max_Drawdown": -0.07724301307501212
+    },
+    {
+      "Fold": 5,
+      "Test_Start": "2026-02-23",
+      "Test_End": "2026-06-24",
+      "Regimes": "Tuesday-era",
+      "Condition": "Baseline (Technical Only)",
+      "RMSE": 0.016423706295069875,
+      "MAE": 0.01217296122792578,
+      "Directional_Accuracy": 0.4567901234567901,
+      "Sharpe_Ratio": -2.6488595826690315,
+      "Total_Return": -0.18875984643600696,
+      "Max_Drawdown": -0.22961947183013853
+    },
+    {
+      "Fold": 5,
+      "Test_Start": "2026-02-23",
+      "Test_End": "2026-06-24",
+      "Regimes": "Tuesday-era",
+      "Condition": "Baseline + Expiry",
+      "RMSE": 0.01648134363661493,
+      "MAE": 0.012234122169769225,
+      "Directional_Accuracy": 0.4691358024691358,
+      "Sharpe_Ratio": -2.761124008424778,
+      "Total_Return": -0.19567705749916275,
+      "Max_Drawdown": -0.23709567681442
+    },
+    {
+      "Fold": 5,
+      "Test_Start": "2026-02-23",
+      "Test_End": "2026-06-24",
+      "Regimes": "Tuesday-era",
+      "Condition": "Baseline + Regime",
+      "RMSE": 0.016505901517161043,
+      "MAE": 0.012268411310022279,
+      "Directional_Accuracy": 0.4567901234567901,
+      "Sharpe_Ratio": -2.6488595826690315,
+      "Total_Return": -0.18875984643600696,
+      "Max_Drawdown": -0.22961947183013853
+    },
+    {
+      "Fold": 5,
+      "Test_Start": "2026-02-23",
+      "Test_End": "2026-06-24",
+      "Regimes": "Tuesday-era",
+      "Condition": "Proposed (Combined)",
+      "RMSE": 0.016484928494583505,
+      "MAE": 0.012183694523560473,
+      "Directional_Accuracy": 0.4567901234567901,
+      "Sharpe_Ratio": -3.2052973630452093,
+      "Total_Return": -0.22255835353207398,
+      "Max_Drawdown": -0.2626881244923558
     }
   ],
   "summary": [
     {
       "Condition": "Baseline (Technical Only)",
-      "RMSE_mean": 0.009658626930131692,
-      "RMSE_std": 0.003711206543209284,
-      "DirAcc_mean": 0.4962962962962963,
-      "DirAcc_std": 0.061356906863156445,
-      "Sharpe_mean": -0.3901165966035479,
-      "Sharpe_std": 0.7146561960967303
+      "RMSE_mean": 0.009828779073190765,
+      "RMSE_std": 0.004112611826063264,
+      "DirAcc_mean": 0.49382716049382713,
+      "DirAcc_std": 0.0390404649403504,
+      "Sharpe_mean": -0.4717254937808466,
+      "Sharpe_std": 2.6323158582412094
     },
     {
       "Condition": "Baseline + Expiry",
-      "RMSE_mean": 0.009739710508254043,
-      "RMSE_std": 0.0036871841074426178,
-      "DirAcc_mean": 0.46419753086419757,
-      "DirAcc_std": 0.06567622754701426,
-      "Sharpe_mean": -1.0677468320521735,
-      "Sharpe_std": 1.5469312320162845
+      "RMSE_mean": 0.009861622053648525,
+      "RMSE_std": 0.004141697671472322,
+      "DirAcc_mean": 0.4913580246913581,
+      "DirAcc_std": 0.048917562360886326,
+      "Sharpe_mean": -0.8891976649655577,
+      "Sharpe_std": 2.0897392043615843
     },
     {
       "Condition": "Baseline + Regime",
-      "RMSE_mean": 0.009667984337501672,
-      "RMSE_std": 0.0037553892912130984,
-      "DirAcc_mean": 0.4765432098765432,
-      "DirAcc_std": 0.061480985669080196,
-      "Sharpe_mean": -0.9498334755448454,
-      "Sharpe_std": 1.8057088928461384
+      "RMSE_mean": 0.009809638892864047,
+      "RMSE_std": 0.004167563238389323,
+      "DirAcc_mean": 0.5185185185185185,
+      "DirAcc_std": 0.0509025385878724,
+      "Sharpe_mean": -0.6887295146828742,
+      "Sharpe_std": 1.3896993543091132
     },
     {
       "Condition": "Proposed (Combined)",
-      "RMSE_mean": 0.009770183855233693,
-      "RMSE_std": 0.0037243742486537923,
-      "DirAcc_mean": 0.46419753086419757,
-      "DirAcc_std": 0.06961912187590957,
-      "Sharpe_mean": -0.976002243073723,
-      "Sharpe_std": 1.6718662650264793
+      "RMSE_mean": 0.009828738119520553,
+      "RMSE_std": 0.004166987777134312,
+      "DirAcc_mean": 0.48395061728395056,
+      "DirAcc_std": 0.0533870328652831,
+      "Sharpe_mean": -1.3164620626134005,
+      "Sharpe_std": 1.9359219877953562
     }
   ],
   "pooled_significance": {
     "DM_test_pooled": {
-      "DM_Stat": -1.368624611509803,
-      "P_Value_Two_Sided": 0.1711166466954923,
-      "P_Value_One_Sided": 0.9144416766522538
+      "DM_Stat": -0.3207426358849736,
+      "P_Value_Two_Sided": 0.7484054341516404,
+      "P_Value_One_Sided": 0.6257972829241798
     },
     "Sharpe_diff_bootstrap": {
-      "diff_mean": -0.21035145108809142,
-      "ci_2.5": -1.4810799726248856,
-      "ci_97.5": 1.051350488776226,
-      "p_diff_le_0": 0.6326
+      "diff_mean": -0.8256440706611676,
+      "ci_2.5": -2.0126237617834604,
+      "ci_97.5": 0.31189210681360313,
+      "p_diff_le_0": 0.92
     },
     "DirAcc_CI_Baseline (Technical Only)": {
-      "accuracy_mean": 0.4962962962962963,
-      "ci_2.5": 0.4469135802469136,
-      "ci_97.5": 0.5456790123456791,
-      "p_le_50pct": 0.5514
+      "accuracy_mean": 0.49382716049382713,
+      "ci_2.5": 0.4444444444444444,
+      "ci_97.5": 0.5432098765432098,
+      "p_le_50pct": 0.595
+    },
+    "Binomial_vs_50pct_Baseline (Technical Only)": {
+      "n_correct": 200,
+      "n_total": 405,
+      "p_value": 0.6171813456755197
     },
     "DirAcc_CI_Baseline + Expiry": {
-      "accuracy_mean": 0.4641975308641975,
-      "ci_2.5": 0.4148148148148148,
-      "ci_97.5": 0.5111728395061719,
-      "p_le_50pct": 0.9322
+      "accuracy_mean": 0.49135802469135803,
+      "ci_2.5": 0.4444444444444444,
+      "ci_97.5": 0.5383333333333324,
+      "p_le_50pct": 0.6436
+    },
+    "Binomial_vs_50pct_Baseline + Expiry": {
+      "n_correct": 199,
+      "n_total": 405,
+      "p_value": 0.6544836615999244
     },
     "DirAcc_CI_Baseline + Regime": {
-      "accuracy_mean": 0.4765432098765432,
-      "ci_2.5": 0.4271604938271605,
-      "ci_97.5": 0.5259259259259259,
-      "p_le_50pct": 0.8256
+      "accuracy_mean": 0.5185185185185185,
+      "ci_2.5": 0.4691358024691358,
+      "ci_97.5": 0.5654320987654321,
+      "p_le_50pct": 0.2232
+    },
+    "Binomial_vs_50pct_Baseline + Regime": {
+      "n_correct": 210,
+      "n_total": 405,
+      "p_value": 0.24334243588822949
     },
     "DirAcc_CI_Proposed (Combined)": {
-      "accuracy_mean": 0.4641975308641975,
-      "ci_2.5": 0.4148148148148148,
-      "ci_97.5": 0.5111111111111111,
-      "p_le_50pct": 0.9266
+      "accuracy_mean": 0.4839506172839506,
+      "ci_2.5": 0.43703703703703706,
+      "ci_97.5": 0.5333333333333333,
+      "p_le_50pct": 0.746
+    },
+    "Binomial_vs_50pct_Proposed (Combined)": {
+      "n_correct": 196,
+      "n_total": 405,
+      "p_value": 0.7566575641117705
+    },
+    "Holm_Bonferroni_adjusted": {
+      "Baseline + Regime": 0.9733697435529179,
+      "Baseline (Technical Only)": 1.0,
+      "Baseline + Expiry": 1.0,
+      "Proposed (Combined)": 1.0
+    },
+    "per_regime_directional_accuracy": {
+      "Baseline (Technical Only)": {
+        "Wednesday-era": {
+          "accuracy_mean": 0.5317073170731708,
+          "ci_2.5": 0.4634146341463415,
+          "ci_97.5": 0.6,
+          "p_le_50pct": 0.1868
+        },
+        "Tuesday-era": {
+          "accuracy_mean": 0.455,
+          "ci_2.5": 0.385,
+          "ci_97.5": 0.525,
+          "p_le_50pct": 0.9128
+        }
+      },
+      "Baseline + Expiry": {
+        "Wednesday-era": {
+          "accuracy_mean": 0.47804878048780486,
+          "ci_2.5": 0.4097560975609756,
+          "ci_97.5": 0.5463414634146342,
+          "p_le_50pct": 0.739
+        },
+        "Tuesday-era": {
+          "accuracy_mean": 0.505,
+          "ci_2.5": 0.435,
+          "ci_97.5": 0.575,
+          "p_le_50pct": 0.473
+        }
+      },
+      "Baseline + Regime": {
+        "Wednesday-era": {
+          "accuracy_mean": 0.5365853658536586,
+          "ci_2.5": 0.4682926829268293,
+          "ci_97.5": 0.6048780487804878,
+          "p_le_50pct": 0.1492
+        },
+        "Tuesday-era": {
+          "accuracy_mean": 0.5,
+          "ci_2.5": 0.43,
+          "ci_97.5": 0.57,
+          "p_le_50pct": 0.5346
+        }
+      },
+      "Proposed (Combined)": {
+        "Wednesday-era": {
+          "accuracy_mean": 0.48292682926829267,
+          "ci_2.5": 0.4146341463414634,
+          "ci_97.5": 0.551219512195122,
+          "p_le_50pct": 0.6908
+        },
+        "Tuesday-era": {
+          "accuracy_mean": 0.485,
+          "ci_2.5": 0.415,
+          "ci_97.5": 0.555,
+          "p_le_50pct": 0.6988
+        }
+      }
     }
   }
 }

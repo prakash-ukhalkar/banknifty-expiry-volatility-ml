@@ -1,0 +1,369 @@
+{
+  "n_obs": 1670,
+  "regime_date_ranges": {
+    "Thursday-era": {
+      "start": "2020-01-15",
+      "end": "2024-02-29",
+      "n": 1023
+    },
+    "Tuesday-era": {
+      "start": "2025-09-01",
+      "end": "2026-10-16",
+      "n": 279
+    },
+    "Wednesday-era": {
+      "start": "2024-03-01",
+      "end": "2025-08-29",
+      "n": 368
+    }
+  },
+  "transition_dates": {
+    "Thursday_to_Wednesday": "2024-03-01",
+    "Wednesday_to_Tuesday": "2025-09-01"
+  },
+  "descriptive_return_by_regime": [
+    {
+      "Regime": "Thursday-era",
+      "N_ExpiryWeek": 250,
+      "N_NonExpiryWeek": 773,
+      "Mean_Return_ExpiryWeek": -0.00018448049338259741,
+      "Mean_Return_NonExpiryWeek": 0.000529657770002606,
+      "Std_Return_ExpiryWeek": 0.019390889227194306,
+      "Std_Return_NonExpiryWeek": 0.016568015523011504,
+      "Welch_t_stat": -0.523753354875071,
+      "Welch_p_value": 0.6007605291289153
+    },
+    {
+      "Regime": "Wednesday-era",
+      "N_ExpiryWeek": 90,
+      "N_NonExpiryWeek": 278,
+      "Mean_Return_ExpiryWeek": 0.0013122511542295427,
+      "Mean_Return_NonExpiryWeek": 0.00011948909027475892,
+      "Std_Return_ExpiryWeek": 0.008472422548655543,
+      "Std_Return_NonExpiryWeek": 0.010789459789198416,
+      "Welch_t_stat": 1.081505303857329,
+      "Welch_p_value": 0.28084209739915017
+    },
+    {
+      "Regime": "Tuesday-era",
+      "N_ExpiryWeek": 65,
+      "N_NonExpiryWeek": 214,
+      "Mean_Return_ExpiryWeek": -0.0023280154974896954,
+      "Mean_Return_NonExpiryWeek": 0.0008939081768392088,
+      "Std_Return_ExpiryWeek": 0.011466337752400142,
+      "Std_Return_NonExpiryWeek": 0.009778081372232525,
+      "Welch_t_stat": -2.0502679077505483,
+      "Welch_p_value": 0.04312225064048767
+    }
+  ],
+  "descriptive_volatility_by_regime": [
+    {
+      "Regime": "Thursday-era",
+      "N_ExpiryWeek": 250,
+      "N_NonExpiryWeek": 773,
+      "Mean_Rolling_Vol_ExpiryWeek": 0.013675055464312262,
+      "Mean_Rolling_Vol_NonExpiryWeek": 0.013903210532606248,
+      "Std_Rolling_Vol_ExpiryWeek": 0.010387364617096278,
+      "Std_Rolling_Vol_NonExpiryWeek": 0.009961424825629957,
+      "Welch_t_stat": -0.3048961030220628,
+      "Welch_p_value": 0.7606009359537935
+    },
+    {
+      "Regime": "Wednesday-era",
+      "N_ExpiryWeek": 90,
+      "N_NonExpiryWeek": 278,
+      "Mean_Rolling_Vol_ExpiryWeek": 0.008177022532575982,
+      "Mean_Rolling_Vol_NonExpiryWeek": 0.009340407328353123,
+      "Std_Rolling_Vol_ExpiryWeek": 0.0023502955273471417,
+      "Std_Rolling_Vol_NonExpiryWeek": 0.005607533992080054,
+      "Welch_t_stat": -2.7851144715492477,
+      "Welch_p_value": 0.005647196845396803
+    },
+    {
+      "Regime": "Tuesday-era",
+      "N_ExpiryWeek": 65,
+      "N_NonExpiryWeek": 214,
+      "Mean_Rolling_Vol_ExpiryWeek": 0.008386931462149977,
+      "Mean_Rolling_Vol_NonExpiryWeek": 0.00895477517142504,
+      "Std_Rolling_Vol_ExpiryWeek": 0.0051044875973810366,
+      "Std_Rolling_Vol_NonExpiryWeek": 0.0052518680862789595,
+      "Welch_t_stat": -0.7801797276676651,
+      "Welch_p_value": 0.4369852614854416
+    }
+  ],
+  "descriptive_parkinson_vol_by_regime": [
+    {
+      "Regime": "Thursday-era",
+      "N_ExpiryWeek": 250,
+      "N_NonExpiryWeek": 773,
+      "Mean_Parkinson_Vol_1d_ExpiryWeek": 0.011716912839996596,
+      "Mean_Parkinson_Vol_1d_NonExpiryWeek": 0.010980652951931758,
+      "Std_Parkinson_Vol_1d_ExpiryWeek": 0.00958364140337816,
+      "Std_Parkinson_Vol_1d_NonExpiryWeek": 0.008455830084886994,
+      "Welch_t_stat": 1.0856942150004882,
+      "Welch_p_value": 0.27829832827669804
+    },
+    {
+      "Regime": "Wednesday-era",
+      "N_ExpiryWeek": 90,
+      "N_NonExpiryWeek": 278,
+      "Mean_Parkinson_Vol_1d_ExpiryWeek": 0.006755490929139846,
+      "Mean_Parkinson_Vol_1d_NonExpiryWeek": 0.007464964772426386,
+      "Std_Parkinson_Vol_1d_ExpiryWeek": 0.0029698849991626744,
+      "Std_Parkinson_Vol_1d_NonExpiryWeek": 0.004635400509309149,
+      "Welch_t_stat": -1.6945462083578675,
+      "Welch_p_value": 0.09147334406301563
+    },
+    {
+      "Regime": "Tuesday-era",
+      "N_ExpiryWeek": 65,
+      "N_NonExpiryWeek": 214,
+      "Mean_Parkinson_Vol_1d_ExpiryWeek": 0.006956344851192857,
+      "Mean_Parkinson_Vol_1d_NonExpiryWeek": 0.0066067864595830035,
+      "Std_Parkinson_Vol_1d_ExpiryWeek": 0.003359013258533384,
+      "Std_Parkinson_Vol_1d_NonExpiryWeek": 0.003296313248517784,
+      "Welch_t_stat": 0.7379868083831769,
+      "Welch_p_value": 0.4621806798789384
+    }
+  ],
+  "descriptive_garman_klass_vol_by_regime": [
+    {
+      "Regime": "Thursday-era",
+      "N_ExpiryWeek": 250,
+      "N_NonExpiryWeek": 773,
+      "Mean_GarmanKlass_Vol_1d_ExpiryWeek": 0.011783112544678724,
+      "Mean_GarmanKlass_Vol_1d_NonExpiryWeek": 0.011145647406912878,
+      "Std_GarmanKlass_Vol_1d_ExpiryWeek": 0.009323508393705843,
+      "Std_GarmanKlass_Vol_1d_NonExpiryWeek": 0.008306555306285471,
+      "Welch_t_stat": 0.9643383710505005,
+      "Welch_p_value": 0.3354815230956898
+    },
+    {
+      "Regime": "Wednesday-era",
+      "N_ExpiryWeek": 90,
+      "N_NonExpiryWeek": 278,
+      "Mean_GarmanKlass_Vol_1d_ExpiryWeek": 0.006888296666112073,
+      "Mean_GarmanKlass_Vol_1d_NonExpiryWeek": 0.007672854674287052,
+      "Std_GarmanKlass_Vol_1d_ExpiryWeek": 0.002844321049514727,
+      "Std_GarmanKlass_Vol_1d_NonExpiryWeek": 0.004255482149089333,
+      "Welch_t_stat": -1.992577252548073,
+      "Welch_p_value": 0.047508100335646404
+    },
+    {
+      "Regime": "Tuesday-era",
+      "N_ExpiryWeek": 65,
+      "N_NonExpiryWeek": 214,
+      "Mean_GarmanKlass_Vol_1d_ExpiryWeek": 0.0068674911901489485,
+      "Mean_GarmanKlass_Vol_1d_NonExpiryWeek": 0.006742154032223294,
+      "Std_GarmanKlass_Vol_1d_ExpiryWeek": 0.002841380262960033,
+      "Std_GarmanKlass_Vol_1d_NonExpiryWeek": 0.003273562297762997,
+      "Welch_t_stat": 0.3002291771174745,
+      "Welch_p_value": 0.7645212272566233
+    }
+  ],
+  "its_return_model": {
+    "label": "Return ~ ExpiryWeek*Regime + trend",
+    "params": {
+      "const": 0.00011707968374179305,
+      "Expiry_Week": -0.0007161280472107823,
+      "Wednesday": -0.0009716231821719518,
+      "Tuesday": -0.00045993951616784884,
+      "EW_x_Wed": 0.0019038371465660289,
+      "EW_x_Tue": -0.002505795627118127,
+      "Trend": 8.083451040948336e-07
+    },
+    "p_values": {
+      "const": 0.9432545331285608,
+      "Expiry_Week": 0.5759782772752527,
+      "Wednesday": 0.48881521861243193,
+      "Tuesday": 0.8265893631587306,
+      "EW_x_Wed": 0.2414172593118964,
+      "EW_x_Tue": 0.2007987273851941,
+      "Trend": 0.7215209643434133
+    },
+    "conf_int_lower": {
+      "const": -0.0031067486784208866,
+      "Expiry_Week": -0.003225807027920362,
+      "Wednesday": -0.0037227958067026484,
+      "Tuesday": -0.004574753801338644,
+      "EW_x_Wed": -0.0012814860062091884,
+      "EW_x_Tue": -0.006344886332118707,
+      "Trend": -3.6366834544123362e-06
+    },
+    "conf_int_upper": {
+      "const": 0.003340908045904473,
+      "Expiry_Week": 0.0017935509334987972,
+      "Wednesday": 0.001779549442358745,
+      "Tuesday": 0.0036548747690029458,
+      "EW_x_Wed": 0.005089160299341246,
+      "EW_x_Tue": 0.001333295077882453,
+      "Trend": 5.253373662602003e-06
+    },
+    "n_obs": 1670,
+    "r_squared": 0.0021023530188413186
+  },
+  "its_absreturn_model": {
+    "label": "|Return| ~ ExpiryWeek*Regime + trend",
+    "params": {
+      "const": 0.018573100573368997,
+      "Expiry_Week": 0.00033237481725165255,
+      "Wednesday": 0.006465182428622905,
+      "Tuesday": 0.010809433433939768,
+      "EW_x_Wed": -0.0007336857939838991,
+      "EW_x_Tue": 0.000967017499682962,
+      "Trend": -1.4771902578049783e-05
+    },
+    "p_values": {
+      "const": 2.105562830957087e-29,
+      "Expiry_Week": 0.772427132390958,
+      "Wednesday": 2.0319539339401824e-05,
+      "Tuesday": 1.1757597477689499e-06,
+      "EW_x_Wed": 0.610732952448001,
+      "EW_x_Tue": 0.6370851621847375,
+      "Trend": 5.169922566868742e-10
+    },
+    "conf_int_lower": {
+      "const": 0.015339726268979384,
+      "Expiry_Week": -0.0019201809929300716,
+      "Wednesday": 0.0034915886946576425,
+      "Tuesday": 0.006449865997989667,
+      "EW_x_Wed": -0.0035586760913291736,
+      "EW_x_Tue": -0.0030503782799002517,
+      "Trend": -1.9431229628234807e-05
+    },
+    "conf_int_upper": {
+      "const": 0.02180647487775861,
+      "Expiry_Week": 0.0025849306274333766,
+      "Wednesday": 0.009438776162588168,
+      "Tuesday": 0.015169000869889869,
+      "EW_x_Wed": 0.0020913045033613756,
+      "EW_x_Tue": 0.004984413279266176,
+      "Trend": -1.011257552786476e-05
+    },
+    "n_obs": 1670,
+    "r_squared": 0.12302009663092173
+  },
+  "its_rolling_vol_model": {
+    "label": "Rolling_Vol ~ ExpiryWeek*Regime + trend",
+    "params": {
+      "const": 0.022954359385690473,
+      "Expiry_Week": -0.00018450313865811923,
+      "Wednesday": 0.007754400362995451,
+      "Tuesday": 0.013132664737810695,
+      "EW_x_Wed": -0.0008680295875039752,
+      "EW_x_Tue": -0.00038334057061693123,
+      "Trend": -1.7733496047109094e-05
+    },
+    "p_values": {
+      "const": 2.6675047868561377e-32,
+      "Expiry_Week": 0.8598415472088187,
+      "Wednesday": 5.438016469953458e-06,
+      "Tuesday": 2.270526640708025e-07,
+      "EW_x_Wed": 0.5253210380088656,
+      "EW_x_Tue": 0.8214530694238903,
+      "Trend": 1.0982352694731538e-10
+    },
+    "conf_int_lower": {
+      "const": 0.01915197889300348,
+      "Expiry_Week": -0.0022324585113880514,
+      "Wednesday": 0.004412002766868381,
+      "Tuesday": 0.00815951562245883,
+      "EW_x_Wed": -0.0035465582773954478,
+      "EW_x_Tue": -0.003712592183115864,
+      "Trend": -2.3119866589388614e-05
+    },
+    "conf_int_upper": {
+      "const": 0.026756739878377466,
+      "Expiry_Week": 0.001863452234071813,
+      "Wednesday": 0.011096797959122521,
+      "Tuesday": 0.01810581385316256,
+      "EW_x_Wed": 0.001810499102387497,
+      "EW_x_Tue": 0.0029459110418820016,
+      "Trend": -1.2347125504829576e-05
+    },
+    "n_obs": 1670,
+    "r_squared": 0.3045773950083359
+  },
+  "its_parkinson_vol_model": {
+    "label": "Parkinson_Vol_1d ~ ExpiryWeek*Regime + trend",
+    "params": {
+      "const": 0.017717433716294702,
+      "Expiry_Week": 0.0007687500707666751,
+      "Wednesday": 0.0056520209599043025,
+      "Tuesday": 0.009083917632358728,
+      "EW_x_Wed": -0.0013957165879232326,
+      "EW_x_Tue": -0.0004191916791568039,
+      "Trend": -1.3199062019000521e-05
+    },
+    "p_values": {
+      "const": 1.0617319023179905e-35,
+      "Expiry_Week": 0.40034177741175114,
+      "Wednesday": 8.084832567991819e-06,
+      "Tuesday": 2.1388760116706048e-06,
+      "EW_x_Wed": 0.18184023021646445,
+      "EW_x_Tue": 0.7249435617254489,
+      "Trend": 3.08025290259439e-10
+    },
+    "conf_int_lower": {
+      "const": 0.014933146879259562,
+      "Expiry_Week": -0.0010228108825674105,
+      "Wednesday": 0.0031698467552661418,
+      "Tuesday": 0.005327640338981129,
+      "EW_x_Wed": -0.0034446515173430755,
+      "EW_x_Tue": -0.002754215658670318,
+      "Trend": -1.7308828809482123e-05
+    },
+    "conf_int_upper": {
+      "const": 0.02050172055332984,
+      "Expiry_Week": 0.0025603110241007605,
+      "Wednesday": 0.008134195164542463,
+      "Tuesday": 0.012840194925736327,
+      "EW_x_Wed": 0.0006532183414966102,
+      "EW_x_Tue": 0.0019158323003567101,
+      "Trend": -9.089295228518919e-06
+    },
+    "n_obs": 1670,
+    "r_squared": 0.24830428346221067
+  },
+  "its_garman_klass_vol_model": {
+    "label": "GarmanKlass_Vol_1d ~ ExpiryWeek*Regime + trend",
+    "params": {
+      "const": 0.01776386046024224,
+      "Expiry_Week": 0.0006693834914697189,
+      "Wednesday": 0.005533564222988389,
+      "Tuesday": 0.008817433011127059,
+      "EW_x_Wed": -0.0013728863069809713,
+      "EW_x_Tue": -0.0005440463335440485,
+      "Trend": -1.2966757803363657e-05
+    },
+    "p_values": {
+      "const": 2.577578459594279e-37,
+      "Expiry_Week": 0.45383264387267663,
+      "Wednesday": 1.0188890145009817e-05,
+      "Tuesday": 3.6915612862856414e-06,
+      "EW_x_Wed": 0.17482855584624757,
+      "EW_x_Tue": 0.6252724056498875,
+      "Trend": 3.762405058903675e-10
+    },
+    "conf_int_lower": {
+      "const": 0.015036322063756819,
+      "Expiry_Week": -0.0010821467593519572,
+      "Wednesday": 0.0030759892846961134,
+      "Tuesday": 0.005083264936575172,
+      "EW_x_Wed": -0.0033560131925659386,
+      "EW_x_Tue": -0.0027273577537234458,
+      "Trend": -1.70242429022336e-05
+    },
+    "conf_int_upper": {
+      "const": 0.020491398856727662,
+      "Expiry_Week": 0.002420913742291395,
+      "Wednesday": 0.007991139161280665,
+      "Tuesday": 0.012551601085678946,
+      "EW_x_Wed": 0.000610240578603996,
+      "EW_x_Tue": 0.0016392650866353486,
+      "Trend": -8.909272704493714e-06
+    },
+    "n_obs": 1670,
+    "r_squared": 0.25388919942345967
+  }
+}
