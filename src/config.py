@@ -18,9 +18,12 @@ FIGURES_DIR = RESULTS_DIR / "figures"
 # Project Configuration
 RANDOM_SEED = 42
 
-# Date range for the study (mid-2023 to present)
-START_DATE = "2023-06-01"
-END_DATE = "2026-06-27"  # Current local date
+# Date range for the study. Extended back to 2020 so the Thursday-expiry-era
+# baseline (pre-March-2024 reform) has enough history to power the regime-shift
+# interrupted-time-series analysis -- the original mid-2023 start left only ~8
+# months of pre-reform data.
+START_DATE = "2020-01-01"
+END_DATE = "2026-10-18"  # Current local date
 
 # Ensure output directories exist
 for path in [RAW_DATA_DIR, INTERIM_DATA_DIR, PROCESSED_DATA_DIR, MODELS_DIR, TABLES_DIR, FIGURES_DIR]:

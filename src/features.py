@@ -51,7 +51,23 @@ def add_technical_indicators(df):
     
     # 5. Rolling Volatility - 10-day rolling std of returns
     df['Rolling_Vol'] = df['Return'].rolling(window=10).std()
-    
+
+    # 6. Range-based realized volatility estimators (Parkinson, Garman-Klass).
+    # Close-to-close rolling std above only uses the daily close and is ~5x less
+    # statistically efficient than range-based estimators that also use the day's
+    # high/low (and open), since it discards most of the intraday price path.
+    # Parkinson (1980): sigma^2 = (1 / (4*ln(2))) * E[(ln(H/L))^2]
+    log_hl = np.log(df['High'] / df['Low'])
+    df['Parkinson_Vol_1d'] = np.sqrt((1.0 / (4.0 * np.log(2.0))) * (log_hl ** 2))
+    df['Parkinson_Vol_10d'] = np.sqrt(
+        (1.0 / (4.0 * np.log(2.0))) * (log_hl ** 2).rolling(window=10).mean()
+    )
+    # Garman-Klass (1980): adds open/close terms, more efficient still.
+    log_co = np.log(df['Close'] / df['Open'])
+    gk_term = 0.5 * (log_hl ** 2) - (2 * np.log(2) - 1) * (log_co ** 2)
+    df['GarmanKlass_Vol_1d'] = np.sqrt(gk_term.clip(lower=0))
+    df['GarmanKlass_Vol_10d'] = np.sqrt(gk_term.rolling(window=10).mean().clip(lower=0))
+
     return df
 
 def calculate_expiry_distance(df, expiry_dates):

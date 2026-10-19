@@ -37,20 +37,28 @@ def build_linear_regressor():
 
 def build_xgb_regressor(params=None):
     """
-    Builds an actual regularized XGBoost regressor, used only for the linear-vs-tree
-    comparison in the paper. Regularized (shallow depth, L1/L2 penalties, early
-    stopping) per the earlier internal review finding that an unregularized XGBoost
-    overfits daily index returns and underperforms a naive mean-return baseline.
+    Builds a regularized XGBoost regressor, used for the linear-vs-tree comparison.
+
+    Note: an earlier version used reg_alpha=1.0/reg_lambda=5.0 with max_depth=2,
+    which made every candidate split's gain negative under XGBoost's default
+    objective -- the booster never split past a single root leaf (tree dump:
+    "0:leaf=-0") and early stopping locked in at iteration 0. That produced a
+    constant-~0 predictor identical across every feature condition, which looked
+    like (but was not) a fair XGBoost-vs-OLS comparison. The settings below were
+    verified (via scripts/compare_ols_xgb.py) to let the booster actually split on
+    the input features -- predictions now differ across feature conditions.
     """
     default_params = dict(
         n_estimators=300,
-        max_depth=2,
-        learning_rate=0.03,
-        reg_alpha=1.0,
-        reg_lambda=5.0,
+        max_depth=3,
+        learning_rate=0.05,
+        reg_alpha=0.1,
+        reg_lambda=1.0,
+        min_child_weight=1,
+        gamma=0,
         subsample=0.8,
         colsample_bytree=0.8,
-        early_stopping_rounds=15,
+        early_stopping_rounds=20,
         random_state=config.RANDOM_SEED,
     )
     if params:
