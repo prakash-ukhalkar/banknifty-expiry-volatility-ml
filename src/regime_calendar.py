@@ -1,19 +1,34 @@
 """
-SEBI-mandated weekly-expiry settlement-day calendar: Thursday -> Wednesday (Mar 2024)
--> Tuesday (Sep 2025), per data/raw/nse_expiry_calendar.csv. Shared by the walk-forward
-ML evaluation and the regime-shift event study so both use the same regime boundaries.
+Bank Nifty settlement regimes (TRUE, from the Bhavcopy expiry field): Thursday-weekly -> Wednesday-weekly
+(2023-09-06) -> Monthly-only-Thursday (2024-11-14, weekly contract retired) -> Monthly-only-Tuesday (2025-09-01).
+Shared by the walk-forward evaluation and the regime-shift ITS. The old rule-based calendar is kept as LEGACY.
 """
 import pandas as pd
 
-REGIME_BOUNDARIES = [
+LEGACY_REGIME_BOUNDARIES = [  # WRONG: from the rule-based calendar; kept only for comparison
     (pd.Timestamp("1900-01-01"), pd.Timestamp("2024-02-29"), "Thursday-era"),
     (pd.Timestamp("2024-03-01"), pd.Timestamp("2025-08-31"), "Wednesday-era"),
     (pd.Timestamp("2025-09-01"), pd.Timestamp("2100-01-01"), "Tuesday-era"),
 ]
 
+# TRUE Bank Nifty settlement regimes, from the Bhavcopy expiry field (scripts/build_index_expiry_panel.py):
+#  - weekly options expired Thursday until 2023-09-05; Wednesday from 2023-09-06 (last weekly 2024-11-13)
+#  - after the weekly contract was retired the monthly expiry was the last Thursday (Jan-Aug 2025)
+#  - from Sep 2025 the monthly expiry is the last Tuesday
+# NOTE: weekday and weekly-contract status change together, so regimes are NOT separable
+# from the weekly-contract removal; the Monthly-only regimes carry both changes.
+REGIME_BOUNDARIES = [
+    (pd.Timestamp("1900-01-01"), pd.Timestamp("2023-09-05"), "Thursday-weekly"),
+    (pd.Timestamp("2023-09-06"), pd.Timestamp("2024-11-13"), "Wednesday-weekly"),
+    (pd.Timestamp("2024-11-14"), pd.Timestamp("2025-08-31"), "Monthly-only-Thursday"),
+    (pd.Timestamp("2025-09-01"), pd.Timestamp("2100-01-01"), "Monthly-only-Tuesday"),
+]
+REGIME_NAMES = [r[2] for r in REGIME_BOUNDARIES]
+
 TRANSITION_DATES = {
-    "Thursday_to_Wednesday": pd.Timestamp("2024-03-01"),
-    "Wednesday_to_Tuesday": pd.Timestamp("2025-09-01"),
+    "Thursday_to_Wednesday_weekly": pd.Timestamp("2023-09-06"),
+    "Weekly_removal_to_Monthly_Thursday": pd.Timestamp("2024-11-14"),
+    "Monthly_Thursday_to_Tuesday": pd.Timestamp("2025-09-01"),
 }
 
 # SEBI's "one weekly index-derivatives contract per exchange" rule (effective
