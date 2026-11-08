@@ -11,20 +11,17 @@ An empirical capital-markets study of India's National Stock Exchange (NSE) inde
 
 ---
 
-## Research question and finding
+## Research question and finding (corrected, Nov 2026)
 
-Two regulatory reforms hit NSE's index-derivatives market within an eighteen-month window:
+NSE's weekly-contract rule (one weekly index contract per exchange) retired the weekly options on Bank Nifty, Fin Nifty and Midcap Nifty after 13 Nov 2024 while Nifty 50 kept its own. Using true per-index expiry dates taken from the Bhavcopy expiry field (`scripts/build_index_expiry_panel.py`):
 
-1. **Settlement-weekday shift** — the weekly index-options expiry moved from Thursday to Wednesday (March 2024) to Tuesday (September 2025).
-2. **Single-weekly-contract rule** — a separate rule limiting each exchange to one weekly index-derivatives contract forced NSE to discontinue **Bank Nifty** weekly options (last traded 13 November 2024) while **Nifty 50** retained its own.
+* **Activity collapsed rather than concentrated.** Bank Nifty's monthly F&O turnover fell ~94% relative to Nifty (DiD, log points -2.82), its monthly-expiry-day turnover fell ~76% (-1.42), while the expiry day's *share* of the month's turnover rose from ~14% to 40-50% (+1.40 log points). Fin Nifty and Midcap Nifty show the same pattern.
+* **Partial substitution to Nifty.** Nifty's rise absorbs roughly 37% of the delisted indices' lost turnover (Nifty's own organic growth was large, so this is an upper bound). Four-index turnover fell ~38%.
+* **Design checks.** In-time placebo cutovers (31 fake dates, pre-period only) give effects within +/-0.5 log points versus -2.8 (true); BN-only before/after and window sensitivity agree in sign. Caveat: Nifty is a contaminated control, there are only 3 treated indices, and pre-trend coefficients in the event study are modest but non-zero.
+* **An earlier version of this repo claimed "expiry-day turnover rose 283%".** That came from a wrong rule-based expiry calendar and a ratio-of-ratios specification; see `results/LEGACY_README.md`. Do not cite those numbers.
+* **Settlement-weekday reforms:** walk-forward and interrupted-time-series analyses find no robust return predictability or volatility shift (secondary result; the ITS used the old calendar and should be re-run).
 
-This project asks two questions about those reforms and answers both honestly, including the one that came back null:
-
-> **Primary finding:** Using the complete NSE futures-and-options Bhavcopy archive (2020–2026), reconstructed into lot-size-invariant turnover and open-interest series, a difference-in-differences model against the Nifty 50 control finds Bank Nifty's expiry-day trading turnover rose by an additional **283%** (p < 0.001) and open interest by **28%** (p = 0.013) after the weekly-contract removal. The result survives a lot-size confound correction, placebo cutover dates, leave-one-out exclusion of each treated expiry, and an event-study specification confirming a discrete post-reform jump rather than a continuation of a pre-existing trend.
->
-> **Secondary finding (null, reported transparently):** A leakage-free walk-forward evaluation and an interrupted-time-series analysis find **no robust evidence** that the settlement-weekday reforms created exploitable next-day return predictability or shifted expiry-week volatility.
-
-The reform's measurable effect operates through **trading concentration**, not price predictability, with direct implications for how exchanges and clearing corporations calibrate settlement-day margining and operational capacity when retiring a derivatives contract.
+Reproduce with `scripts/run_corrected_pipeline.sh`.
 
 ---
 
