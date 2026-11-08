@@ -1,0 +1,93 @@
+{
+ "NSE: BANKNIFTY vs NIFTY": {
+  "lt": {
+   "coef": -1.973560907776207,
+   "se": 0.20533031561529072,
+   "p": 7.140308176358455e-22,
+   "n": 78
+  },
+  "le": {
+   "coef": -0.6211838026855787,
+   "se": 0.22231110966359027,
+   "p": 0.005202677012145486,
+   "n": 78
+  },
+  "ls": {
+   "coef": 1.352377105090632,
+   "se": 0.11122908433039665,
+   "p": 5.170902657833718e-34,
+   "n": 78
+  }
+ },
+ "BSE: BANKEX vs SENSEX": {
+  "lt": {
+   "coef": -4.84246422395573,
+   "se": 1.8325474471541259,
+   "p": 0.008230208897316264,
+   "n": 78
+  },
+  "le": {
+   "coef": -3.8200059638132347,
+   "se": 2.1411491017998263,
+   "p": 0.07440879437415052,
+   "n": 78
+  },
+  "ls": {
+   "coef": 1.0224582601424954,
+   "se": 0.3801102831056687,
+   "p": 0.007147365308141634,
+   "n": 78
+  }
+ },
+ "pooled_twfe": {
+  "lt": {
+   "coef": -3.2964957500513195,
+   "randomization_p_two_sided": 0.2,
+   "n_assignments": 15,
+   "rank_of_true_by_abs": 3
+  },
+  "le": {
+   "coef": -1.7886743896132096,
+   "randomization_p_two_sided": 0.3333333333333333,
+   "n_assignments": 15,
+   "rank_of_true_by_abs": 5
+  },
+  "ls": {
+   "coef": 1.5078213604381094,
+   "randomization_p_two_sided": 0.06666666666666667,
+   "n_assignments": 15,
+   "rank_of_true_by_abs": 1
+  }
+ },
+ "substitution": {
+  "treated_loss_per_month": 4618442366766176.0,
+  "controls_gain_naive": 4573674847952138.0,
+  "years_between_period_midpoints": 1.7494866529774127,
+  "substitution_share_naive": 0.9903067927974634,
+  "substitution_share_by_assumed_organic_growth": {
+   "organic_growth_0pct_per_year": 0.9903067927974634,
+   "organic_growth_25pct_per_year": 0.6302251954161278,
+   "organic_growth_50pct_per_year": 0.21164905948058454,
+   "organic_growth_100pct_per_year": -0.7909710845499941
+  },
+  "total_6index_change_pct_naive": -0.5259563040297399,
+  "sensex_gain_naive": 2571025806048213.0,
+  "nifty_gain_naive": 2002649041903925.0
+ },
+ "participants": {
+  "pre (2024-01..09)": {
+   "Client": 0.34095615443758637,
+   "Pro": 0.586579047448025,
+   "FII": 0.07242774236002435,
+   "DII": 3.705575436420378e-05,
+   "opt_total_long_mean": 502520722.86885244
+  },
+  "post (2025-01..2026-09)": {
+   "Client": 0.36444448880908414,
+   "Pro": 0.5629994970728028,
+   "FII": 0.0725188632433546,
+   "DII": 3.71508747585694e-05,
+   "opt_total_long_mean": 140018233.1435185
+  }
+ }
+}
