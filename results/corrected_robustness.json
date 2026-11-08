@@ -1,0 +1,87 @@
+{
+ "calendar_audit": {
+  "BANKNIFTY": {
+   "true_monthly_expiries": 81,
+   "matched_by_old_calendar": 71,
+   "mismatched": 10,
+   "mismatched_since_2024-11-14": 8
+  },
+  "NIFTY": {
+   "true_monthly_expiries": 82,
+   "matched_by_old_calendar": 64,
+   "mismatched": 18,
+   "mismatched_since_2024-11-14": 10
+  }
+ },
+ "substitution": {
+  "delisted_change_INR_per_month": -4675123845637313.0,
+  "nifty_change_INR_per_month": 1754328277101184.0,
+  "nifty_gain_as_share_of_delisted_loss": 0.3752474447790878,
+  "nifty_share_of_4index_turnover_pre": 0.3494852069224424,
+  "nifty_share_of_4index_turnover_post": 0.9255275478466519,
+  "four_index_total_change_pct": -37.74452654599184
+ },
+ "nifty_yoy_growth_2023_vs_2022_pct": 72.39815223595049,
+ "in_time_placebo": {
+  "lt": {
+   "true": -2.8210112182722216,
+   "placebo_mean": -0.04126436000806456,
+   "placebo_min": -0.40572222167121375,
+   "placebo_max": 0.2599233510397214,
+   "n_placebos": 31,
+   "rand_p_two_sided": 0.0
+  },
+  "le": {
+   "true": -1.4207184681123424,
+   "placebo_mean": -0.039393601838801556,
+   "placebo_min": -0.5154102235405684,
+   "placebo_max": 0.30898150799322854,
+   "n_placebos": 31,
+   "rand_p_two_sided": 0.0
+  },
+  "ls": {
+   "true": 1.4002927501598814,
+   "placebo_mean": 0.0018707581692627357,
+   "placebo_min": -0.11449485959164901,
+   "placebo_max": 0.11560403113177023,
+   "n_placebos": 31,
+   "rand_p_two_sided": 0.0
+  }
+ },
+ "bn_only_before_after": {
+  "lt": {
+   "coef": -3.4701829498590504,
+   "se": 0.35330075910116404
+  },
+  "le": {
+   "coef": -2.312454407506874,
+   "se": 0.27835371768018324
+  },
+  "ls": {
+   "coef": 1.1577285423521722,
+   "se": 0.09111305185710199
+  }
+ },
+ "window_sensitivity": {
+  "2023-01..2026-10": {
+   "lt": -2.102105911992412,
+   "le": -0.6371457094687834,
+   "ls": 1.464960202523627
+  },
+  "2024-01..2026-10": {
+   "lt": -2.0296920099389366,
+   "le": -0.6045765955031089,
+   "ls": 1.4251154144358305
+  },
+  "2024-01..2025-08": {
+   "lt": -1.833055925544052,
+   "le": -0.32575219123793175,
+   "ls": 1.5073037343061233
+  },
+  "2022-01..2026-10": {
+   "lt": -2.472437086279535,
+   "le": -1.05670281296169,
+   "ls": 1.415734273317847
+  }
+ }
+}
