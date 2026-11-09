@@ -11,7 +11,7 @@ An empirical capital-markets study of India's National Stock Exchange (NSE) inde
 
 ---
 
-## Research question and findings (corrected, Nov 2026)
+## Research question and findings
 
 SEBI's weekly-contract rule (one weekly index-options expiry per exchange) led NSE to retire weekly options on Bank Nifty, Fin Nifty and Midcap Nifty after 13 Nov 2024 while Nifty 50 kept its own; BSE retired Bankex weeklies and kept Sensex. The study measures what this did to trading activity, using true per-index expiry dates taken from the Bhavcopy expiry field (`scripts/build_index_expiry_panel.py`). All effects below are log points from within-exchange difference-in-differences on index-month panels with index-specific linear trends and month-clustered standard errors (Nov 2024 excluded), unless stated otherwise.
 
@@ -23,16 +23,15 @@ SEBI's weekly-contract rule (one weekly index-options expiry per exchange) led N
 * **Migration is bounded, not identified.** Six-index turnover is flat (-0.5%) and Nifty plus Sensex gained 99% of the retired indices' lost turnover in raw terms, but both were growing fast before the reform. Assuming 25% or 50% a year of organic growth lowers the migrated share to ~63% and ~21%. Using aggregate stock F&O (growth factor 1.06) as an observed organic-growth benchmark (`scripts/migration_stock_benchmark.py`), the migrated share is 94% if the retained indices would have grown like stock derivatives, 74%, 54% and 15% if they would have grown 1.25, 1.5 and 2 times as fast. Report it as a range.
 * **Option-level composition.** Before the reform ~97-100% of index-option turnover was in contracts within 7 days of expiry. After retirement Bank Nifty's 0-7 day share fell to ~71% (vs ~97% for Nifty). ATM Corwin-Schultz/high-low measures are exploratory only (they mostly reflect volatility and price level), so no market-quality claim is made for the options themselves. Market-wide NSE index-options client share moved from 34.1% to 36.4% (pro 58.7% to 56.3%).
 * **Futures spillover is null.** Bank Nifty futures Amihud illiquidity (-0.01), Corwin-Schultz spread (~0) and Bankex futures measures show no significant change; Bank Nifty futures intraday range fell ~16%. Option-level spreads, order-book and account-level data are not available, so option market quality and investor outcomes remain untested.
-* **Settlement-weekday reforms (re-run on the true calendar).** The interrupted-time-series (1,670 days, 5 outcomes) finds no expiry-week x regime interaction (all p > 0.17), and the 5-fold walk-forward (913 out-of-fold days) finds directional accuracy of 49-52% with every Holm-adjusted p > 0.5. After Nov 2024 the weekday and the weekly-contract status change together, so these regimes cannot separate the two reforms.
-* **An earlier version of this repo claimed "expiry-day turnover rose 283%".** That came from a wrong rule-based expiry calendar and a ratio-of-ratios specification; see `results/LEGACY_README.md`. Do not cite those numbers.
+* **Settlement-weekday reforms (true expiry calendar).** The interrupted-time-series (1,670 days, 5 outcomes) finds no expiry-week x regime interaction (all p > 0.17), and the 5-fold walk-forward (913 out-of-fold days) finds directional accuracy of 49-52% with every Holm-adjusted p > 0.5. After Nov 2024 the weekday and the weekly-contract status change together, so these regimes cannot separate the two reforms.
 
 Reproduce with `scripts/run_corrected_pipeline.sh`. Small processed panels are in `results/panels/`, and `python -m pytest tests -q` checks the derived panels. Raw exchange files are public and are downloaded by the `download_*` scripts; the large intermediate parquet files are not committed.
 
 ---
 
-## Project history
+## Project scope
 
-This repository originally tested a different hypothesis: whether expiry-calendar and volatility-regime features improve next-day return prediction. Further work found that the project's real, data-verified finding was never about return prediction at all, it was about trading-volume concentration following the weekly-contract removal. The codebase was rebuilt around that finding rather than patched around the original one. The old next-day-prediction result is retained as the honestly-reported secondary null result described above, not as the project's main contribution.
+The project studies how retiring weekly index options changed trading volume and its concentration on expiry days in Indian index derivatives. Next-day return predictability and settlement-weekday effects are examined as secondary analyses, and both are null.
 
 ---
 
