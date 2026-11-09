@@ -1,0 +1,25 @@
+{
+ "stock_fo_growth_factor": 1.0603922666802459,
+ "lost_turnover_per_month": 4618442366766176.0,
+ "retained_pre": 3482377002886630.5,
+ "retained_post": 8056051850838768.0,
+ "retained_growth_factor": 2.313377283436257,
+ "migrated_share_by_multiplier": {
+  "x1.0": {
+   "counterfactual_retained": 3692685643526115.5,
+   "migrated_share": 0.9447700893078098
+  },
+  "x1.25": {
+   "counterfactual_retained": 4615857054407644.0,
+   "migrated_share": 0.7448820453377102
+  },
+  "x1.5": {
+   "counterfactual_retained": 5539028465289173.0,
+   "migrated_share": 0.5449940013676103
+  },
+  "x2.0": {
+   "counterfactual_retained": 7385371287052231.0,
+   "migrated_share": 0.14521791342741083
+  }
+ }
+}
