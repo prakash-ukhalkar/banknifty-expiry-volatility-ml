@@ -1,7 +1,7 @@
 """
 Walk-forward (expanding-window) robustness check for the Bank Nifty expiry-regime study.
 
-Rationale: the paper's headline Sharpe ratio (2.10) and directional accuracy (54.42%)
+Rationale: the original headline Sharpe ratio (2.10) and directional accuracy (54.42%)
 come from a single fixed test window (2025-11-18 to 2026-06-24, 147 trading days).
 This script re-runs the full pipeline (HMM regime fit -> feature set -> OLS -> backtest)
 across multiple expanding-window folds so the result can be reported as a distribution

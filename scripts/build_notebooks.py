@@ -31,7 +31,7 @@ PIPELINE_INDEX = """
 6. **06_expiry_volume_event_study.ipynb** -- expiry-day concentration for six NSE/BSE indices
 7. **07_walk_forward_predictability.ipynb** -- secondary: leakage-free predictability test on the true calendar (null)
 8. **08_interrupted_time_series.ipynb** -- secondary: settlement-weekday ITS plus clean weekday-only contrasts (null)
-9. **09_figures_for_paper.ipynb** -- displays the corrected figures
+9. **09_figures.ipynb** -- displays the corrected figures
 10. **10_option_microstructure_and_placebo.ipynb** -- option-level outcomes, stock-F&O placebo, dose-response
 """.strip()
 
@@ -250,7 +250,7 @@ def notebook_04():
             "The `Expiry_x_Monthly_x_BankNifty` coefficient is the difference-in-differences estimate: "
             "how much more Bank Nifty's expiry-day activity rose, relative to Nifty 50, after the weekly "
             "contract was discontinued. A positive, significant coefficient on both turnover and open "
-            "interest is the paper's primary finding."
+            "interest is the study's primary finding."
         ),
     ]
     save(nb, "04_primary_diff_in_diff_analysis.ipynb")
@@ -342,7 +342,7 @@ def notebook_07():
             "**07_walk_forward_predictability.ipynb**",
         ),
         nbf.v4.new_markdown_cell(
-            "### Why this is in the paper despite being null\n\n"
+            "### Why this is reported despite being null\n\n"
             "This is the question an expiration-day calendar-effects study would typically ask first. The "
             "full five-fold refit (`scripts.walk_forward_backtest`) refits both the regime-detection model "
             "and the forecasting model within each fold, so it takes a few minutes to run end-to-end; "
@@ -418,37 +418,6 @@ def notebook_08():
     save(nb, "08_interrupted_time_series.ipynb")
 
 
-def notebook_09():
-    nb = nbf.v4.new_notebook()
-    nb.cells = [
-        header_cell(
-            "09: Figures for the Paper",
-            "Regenerates the three figures used in the manuscript directly from the saved results JSON "
-            "files, and displays them inline.",
-            "**09_figures_for_paper.ipynb**",
-        ),
-        nbf.v4.new_markdown_cell(
-            "`scripts.make_pbfj_figures` builds all three figures at 300 dpi. Rebuild with:\n\n"
-            "```bash\n"
-            "python -m scripts.make_pbfj_figures\n"
-            "```"
-        ),
-        setup_cell(),
-        nbf.v4.new_code_cell(
-            "from scripts.make_pbfj_figures import (\n"
-            "    fig_event_study_leads_lags, fig_expiry_volume_profile, fig_walk_forward_directional_accuracy,\n"
-            ")\n\n"
-            "fig_event_study_leads_lags()\n"
-            "fig_expiry_volume_profile()\n"
-            "fig_walk_forward_directional_accuracy()"
-        ),
-        nbf.v4.new_code_cell(
-            "from IPython.display import Image, display\n\n"
-            "for fname in ['expiry_volume_profile.png', 'event_study_leads_lags.png', 'walk_forward_directional_accuracy.png']:\n"
-            "    display(Image(filename=str(config.FIGURES_DIR / fname)))"
-        ),
-    ]
-    save(nb, "09_figures_for_paper.ipynb")
 
 
 
@@ -573,7 +542,7 @@ def notebook_08():
 
 
 def notebook_09():
-    _results_nb("09_figures_for_paper.ipynb", "09: Corrected Figures",
+    _results_nb("09_figures.ipynb", "09: Corrected Figures",
                 "Regenerate with `python -m scripts.make_corrected_figures`.",
                 "from IPython.display import Image, display",
                 "figs = ['fig1_turnover_and_share', 'fig2_event_study', 'fig3_walk_forward_true_calendar', 'fig4_expiry_profile_true', 'fig5_six_index_turnover', 'fig6_timing_and_stock_placebo']",

@@ -3,7 +3,7 @@ Regime-shift natural experiment: does the expiry-week return/volatility effect c
 across the SEBI-mandated settlement-day reforms (Thursday -> Wednesday -> Tuesday)?
 
 This replaces next-day-return *prediction* (which scripts/walk_forward_backtest.py shows
-does not survive honest out-of-fold evaluation) as the paper's primary empirical claim.
+does not survive honest out-of-fold evaluation) as the study's primary empirical claim.
 The settlement-day changes are a genuine natural experiment: they were imposed by the
 regulator on a fixed calendar, independent of market conditions, so comparing expiry-week
 behavior before and after each change is a cleaner identification strategy than treating

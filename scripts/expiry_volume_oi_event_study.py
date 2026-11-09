@@ -1,7 +1,7 @@
 """
 Replicates Vipul (2005)'s expiry-day abnormal volume/OI finding on Bank Nifty
 derivatives, using NSE F&O Bhavcopy data (scripts/build_fo_volume_oi_dataset.py).
-This is the paper's primary deliverable per the literature review: the one
+This is the study's primary deliverable per the literature review: the one
 consistently replicated effect across markets is abnormal volume/OI around
 expiry, not next-day return direction (which scripts/walk_forward_backtest.py
 and scripts/regime_shift_event_study.py both find null).

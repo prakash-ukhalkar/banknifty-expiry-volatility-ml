@@ -1,10 +1,10 @@
 """
-Runs the linear-vs-tree comparison the manuscript claims to have made but the
-pipeline never actually performed (build_xgb_regressor previously returned a
+Runs the linear-vs-tree comparison that the
+pipeline had not actually performed (build_xgb_regressor previously returned a
 LinearRegression wrapper regardless of the function name). This trains a real,
 regularized XGBRegressor alongside the OLS model on the original fixed
-train/val/test split (same split used in the submitted paper) across all four
-feature conditions, so Table 2 / the "OLS outperforms XGBoost" claim can be
+train/val/test split (same split used in the original analysis) across all four
+feature conditions, so the "OLS outperforms XGBoost" claim can be
 either substantiated or corrected with real numbers.
 """
 import json

@@ -36,8 +36,9 @@ python -m scripts.option_microstructure_did
 python -m scripts.make_corrected_figures
 python -m scripts.build_notebooks
 python -m pytest tests -q
-# --- Empirical Economics submission package ---
+# --- additional robustness analyses ---
 python -m scripts.calendar_sensitivity
 python -m scripts.pretrend_sensitivity
-python -m scripts.make_ee_figures
-python -m scripts.generate_ee_manuscript
+python -m scripts.pretrend_robust_ci          # ~10 min
+python -m scripts.migration_stock_benchmark
+
