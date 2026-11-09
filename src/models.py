@@ -31,7 +31,7 @@ class LinearRegressionWrapper(LinearRegression):
 
 def build_linear_regressor():
     """
-    Builds the OLS linear regression model used as the paper's proposed architecture.
+    Builds the OLS linear regression model used as the project's proposed architecture.
     """
     return LinearRegressionWrapper()
 
